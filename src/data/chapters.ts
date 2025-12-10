@@ -6,7 +6,7 @@ export interface Chapter {
   id: number;
   sectionTitle: string;
   chapterTitle: string;
-  goldenQuotes: string[];
+  goldenQuotes: { quote: string; author: string }[];
   coreInsights: { title: string; content: string }[];
   practicalApplication: string;
   criticalReflection: string;
@@ -31,10 +31,22 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Foundation of Inner Stability",
     "goldenQuotes": [
-      "All improvement starts within. — Darius Foroux",
-      "We can’t be happy and comfortable in the world if we are not the same in our minds. — Darius Foroux",
-      "With Stoic wisdom, we can guard our minds against the things that disrupt our happiness. — Darius Foroux",
-      "A strong mind is a peaceful mind. — Darius Foroux"
+      {
+        "quote": "All improvement starts within.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "We can’t be happy and comfortable in the world if we are not the same in our minds.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "With Stoic wisdom, we can guard our minds against the things that disrupt our happiness.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "A strong mind is a peaceful mind.",
+        "author": "Darius Foroux"
+      }
     ],
     "coreInsights": [
       {
@@ -66,7 +78,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Harnessing the Divine Power Within",
     "goldenQuotes": [
-      "Understand at last that you have something in you more powerful and divine than what causes the bodily passions and pulls you like a mere puppet. — Marcus Aurelius"
+      {
+        "quote": "Understand at last that you have something in you more powerful and divine than what causes the bodily passions and pulls you like a mere puppet.",
+        "author": "Marcus Aurelius"
+      }
     ],
     "coreInsights": [
       {
@@ -98,10 +113,22 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Dichotomy of Control",
     "goldenQuotes": [
-      "It’s so important to only focus on what you control. — Epictetus",
-      "Time is your most valuable resource. — Darius Foroux",
-      "Without accepting that we don’t control most things in life, we can never have lasting happiness. — Darius Foroux",
-      "What actually matters to your happiness? Good friendships, work that you enjoy, reading books that make you think, walking in nature, working out, watching a good movie — you know this. — Darius Foroux"
+      {
+        "quote": "It’s so important to only focus on what you control.",
+        "author": "Epictetus"
+      },
+      {
+        "quote": "Time is your most valuable resource.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "Without accepting that we don’t control most things in life, we can never have lasting happiness.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "What actually matters to your happiness? Good friendships, work that you enjoy, reading books that make you think, walking in nature, working out, watching a good movie — you know this.",
+        "author": "Darius Foroux"
+      }
     ],
     "coreInsights": [
       {
@@ -133,8 +160,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Emotional Boundaries and Autonomy",
     "goldenQuotes": [
-      "When we decide to change our view of the world, it’s an internal decision. — Darius Foroux",
-      "That’s how you protect your mood: By not feeling responsible for how others feel. — Darius Foroux"
+      {
+        "quote": "When we decide to change our view of the world, it’s an internal decision.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "That’s how you protect your mood: By not feeling responsible for how others feel.",
+        "author": "Darius Foroux"
+      }
     ],
     "coreInsights": [
       {
@@ -166,10 +199,22 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Knowledge as Fuel",
     "goldenQuotes": [
-      "When you’re lost, unfocused, or lacking motivation, grab a book about a topic you’re interested in. — Darius Foroux",
-      "If you don’t have a higher purpose, you can make the pursuit of knowledge your purpose. — Darius Foroux",
-      "Effort nourishes noble spirits. — Seneca",
-      "When you keep learning, you will never be unmotivated for longer than a few days. — Darius Foroux"
+      {
+        "quote": "When you’re lost, unfocused, or lacking motivation, grab a book about a topic you’re interested in.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "If you don’t have a higher purpose, you can make the pursuit of knowledge your purpose.",
+        "author": "Darius Foroux"
+      },
+      {
+        "quote": "Effort nourishes noble spirits.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "When you keep learning, you will never be unmotivated for longer than a few days.",
+        "author": "Darius Foroux"
+      }
     ],
     "coreInsights": [
       {
@@ -201,10 +246,22 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Normalizing and Detaching form Anxiety",
     "goldenQuotes": [
-      "If you want to make progress, stop feeling anxious about things.",
-      "You can’t make people like you — and that’s fine.",
-      "When you choose not to be anxious, you do it in spite of your unfulfilled expectations.",
-      "Nothing is worth giving up your peace of mind for."
+      {
+        "quote": "If you want to make progress, stop feeling anxious about things.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "You can’t make people like you",
+        "author": "and that’s fine."
+      },
+      {
+        "quote": "When you choose not to be anxious, you do it in spite of your unfulfilled expectations.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Nothing is worth giving up your peace of mind for.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -236,8 +293,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Fortress of Zero Expectations",
     "goldenQuotes": [
-      "You are being foolish if you expect your children, spouse, or friends to live forever... It is equally naïve to expect everyone will be honest. — Epictetus",
-      "To avoid disappointment, I kept focusing on what I control: My actions and belief in the book. — Darius Foroux"
+      {
+        "quote": "You are being foolish if you expect your children, spouse, or friends to live forever... It is equally naïve to expect everyone will be honest.",
+        "author": "Epictetus"
+      },
+      {
+        "quote": "To avoid disappointment, I kept focusing on what I control: My actions and belief in the book.",
+        "author": "Darius Foroux"
+      }
     ],
     "coreInsights": [
       {
@@ -269,9 +332,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Paradox of Hope and Fear",
     "goldenQuotes": [
-      "Cease to hope … and you will cease to fear.",
-      "Fear keeps pace with hope … both belong to a mind in suspense, to a mind in a state of anxiety through looking into the future.",
-      "Just have faith in the future, and then forget about it!"
+      {
+        "quote": "Cease to hope … and you will cease to fear.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "Fear keeps pace with hope … both belong to a mind in suspense, to a mind in a state of anxiety through looking into the future.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "Just have faith in the future, and then forget about it!",
+        "author": "Seneca"
+      }
     ],
     "coreInsights": [
       {
@@ -303,9 +375,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Art of Self-Compassion",
     "goldenQuotes": [
-      "Anger, if not restrained, is frequently more hurtful to us than the injury that provokes it.",
-      "Go easy on yourself.",
-      "Instead of beating yourself up and being your own antagonist, be your own comedian."
+      {
+        "quote": "Anger, if not restrained, is frequently more hurtful to us than the injury that provokes it.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Go easy on yourself.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Instead of beating yourself up and being your own antagonist, be your own comedian.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -337,7 +418,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Control Center (Introductory Section)",
     "goldenQuotes": [
-      "The chief task in life is simply this: to identify and separate matters so that I can say clearly to myself which are externals not under my control, and which have to do with the choices I actually control."
+      {
+        "quote": "The chief task in life is simply this: to identify and separate matters so that I can say clearly to myself which are externals not under my control, and which have to do with the choices I actually control.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -369,9 +453,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Illusion of Escape",
     "goldenQuotes": [
-      "You should change your attitude, not your surroundings.",
-      "The problem is actually our mindset. The problem is not you. It’s human nature to get used to your surroundings.",
-      "The solution is not out there. The solution is right where you are."
+      {
+        "quote": "You should change your attitude, not your surroundings.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The problem is actually our mindset. The problem is not you. It’s human nature to get used to your surroundings.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The solution is not out there. The solution is right where you are.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -403,8 +496,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Observer Self",
     "goldenQuotes": [
-      "My mind. What is it? What am I making of it? What am I using it for?",
-      "The more you observe, the more you can spot unhelpful behavior."
+      {
+        "quote": "My mind. What is it? What am I making of it? What am I using it for?",
+        "author": "Marcus Aurelius"
+      },
+      {
+        "quote": "The more you observe, the more you can spot unhelpful behavior.",
+        "author": "Marcus Aurelius"
+      }
     ],
     "coreInsights": [
       {
@@ -436,9 +535,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Mental Diet",
     "goldenQuotes": [
-      "I needed to be able to have more than 15 minutes of uninterrupted thought.",
-      "When you consume information, it will impact your mood — whether you like it or not.",
-      "Get rid of information that makes you feel bad, anxious, weak, jealous, or simply has no use."
+      {
+        "quote": "I needed to be able to have more than 15 minutes of uninterrupted thought.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "When you consume information, it will impact your mood",
+        "author": "whether you like it or not."
+      },
+      {
+        "quote": "Get rid of information that makes you feel bad, anxious, weak, jealous, or simply has no use.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -470,9 +578,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Purpose as a Compass",
     "goldenQuotes": [
-      "No random actions, none not based on underlying principles.",
-      "Living a good life is about not getting distracted.",
-      "To be everywhere is to be nowhere."
+      {
+        "quote": "No random actions, none not based on underlying principles.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Living a good life is about not getting distracted.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "To be everywhere is to be nowhere.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -504,9 +621,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Power of One",
     "goldenQuotes": [
-      "To be everywhere is to be nowhere.",
-      "You can have it all, but not all at the same time.",
-      "You’re better off, mentally and professionally, by being really focused on the things that matter to you."
+      {
+        "quote": "To be everywhere is to be nowhere.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "You can have it all, but not all at the same time.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "You’re better off, mentally and professionally, by being really focused on the things that matter to you.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -538,9 +664,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Defining Mental Sanity",
     "goldenQuotes": [
-      "A healthy pair of eyes should see everything that can be seen and not say, 'No! Too bright!'",
-      "A healthy mind should be prepared for anything.",
-      "It’s an ongoing process of trying to become better."
+      {
+        "quote": "A healthy pair of eyes should see everything that can be seen and not say, 'No! Too bright!'",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "A healthy mind should be prepared for anything.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "It’s an ongoing process of trying to become better.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -572,7 +707,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Prerequisite to Growth",
     "goldenQuotes": [
-      "What progress, you ask, have I made? I have begun to be a friend to myself."
+      {
+        "quote": "What progress, you ask, have I made? I have begun to be a friend to myself.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -604,9 +742,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Authentic Living",
     "goldenQuotes": [
-      "To know thyself is the beginning of wisdom.",
-      "The problem is that most of us lack the confidence to actually live in agreement with who we are.",
-      "What are the ultimate outcomes I’m looking for? Does this align with who I actually am?"
+      {
+        "quote": "To know thyself is the beginning of wisdom.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The problem is that most of us lack the confidence to actually live in agreement with who we are.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "What are the ultimate outcomes I’m looking for? Does this align with who I actually am?",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -638,9 +785,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Reservoir of Resilience",
     "goldenQuotes": [
-      "Remember that for every challenge you face, you have the resources within you to cope with that challenge.",
-      "You are stronger than you think at any given moment.",
-      "The mental equivalent of going through your storage is reflection."
+      {
+        "quote": "Remember that for every challenge you face, you have the resources within you to cope with that challenge.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "You are stronger than you think at any given moment.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The mental equivalent of going through your storage is reflection.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -672,9 +828,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Narrative Power",
     "goldenQuotes": [
-      "Choose not to be harmed — and you won’t feel harmed. Don’t feel harmed — and you haven’t been.",
-      "Never forget: YOU create your own life story. YOU have the power to change your attitude at any given moment.",
-      "You cannot change what happens to you. You can change the meaning you give to what happens."
+      {
+        "quote": "Choose not to be harmed — and you won’t feel harmed. Don’t feel harmed",
+        "author": "and you haven’t been."
+      },
+      {
+        "quote": "Never forget: YOU create your own life story. YOU have the power to change your attitude at any given moment.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "You cannot change what happens to you. You can change the meaning you give to what happens.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -706,9 +871,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Detaching Worth from Possessions",
     "goldenQuotes": [
-      "Think that nothing deserves admiration except the mind, which being itself great counts nothing else as great.",
-      "The truth is that you are not your possessions.",
-      "You don’t need to buy anything today to feel good about yourself. You’re not missing out on anything."
+      {
+        "quote": "Think that nothing deserves admiration except the mind, which being itself great counts nothing else as great.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "The truth is that you are not your possessions.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "You don’t need to buy anything today to feel good about yourself. You’re not missing out on anything.",
+        "author": "Seneca"
+      }
     ],
     "coreInsights": [
       {
@@ -740,8 +914,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Unwavering Integrity",
     "goldenQuotes": [
-      "Decide first what type of person you want to be and stick to it. Be the same person whether you are by yourself or with others.",
-      "The responsibility is all yours; no one can stop you from being honest or straightforward."
+      {
+        "quote": "Decide first what type of person you want to be and stick to it. Be the same person whether you are by yourself or with others.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The responsibility is all yours; no one can stop you from being honest or straightforward.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -773,7 +953,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Decision Matrix (Introductory)",
     "goldenQuotes": [
-      "We must concern ourselves absolutely with the things that are under our control and entrust the things not in our control to the universe."
+      {
+        "quote": "We must concern ourselves absolutely with the things that are under our control and entrust the things not in our control to the universe.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -801,8 +984,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Autonomy Over Approval",
     "goldenQuotes": [
-      "Once you undertake to do something, stick with it and treat it as something that should be carried through. Don’t pay attention to what people say.",
-      "When you want to please everyone in your life, you end up harming your own sense of self-worth."
+      {
+        "quote": "Once you undertake to do something, stick with it and treat it as something that should be carried through. Don’t pay attention to what people say.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "When you want to please everyone in your life, you end up harming your own sense of self-worth.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -834,9 +1023,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Art of Pivot",
     "goldenQuotes": [
-      "But we must be prepared to give up everything when something unexpected happens.",
-      "We’re guests who temporarily walk this planet... I look at everything in life as borrowed.",
-      "Plan all you want! ... Just don’t get attached to your plans."
+      {
+        "quote": "But we must be prepared to give up everything when something unexpected happens.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "We’re guests who temporarily walk this planet... I look at everything in life as borrowed.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Plan all you want! ... Just don’t get attached to your plans.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -868,8 +1066,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Amor Fati (Love of Fate)",
     "goldenQuotes": [
-      "Don’t wish for things to happen the way you like. Instead, welcome whatever happens as if you wanted it to happen.",
-      "Practice acceptance without disdain."
+      {
+        "quote": "Don’t wish for things to happen the way you like. Instead, welcome whatever happens as if you wanted it to happen.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Practice acceptance without disdain.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -901,8 +1105,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Premeditatio Malorum (Negative Visualization)",
     "goldenQuotes": [
-      "Just the thought of multiple disasters happening at the same time will help you to be more clear-headed when things go wrong.",
-      "I am of the nature to have ill health. I cannot escape having ill health."
+      {
+        "quote": "Just the thought of multiple disasters happening at the same time will help you to be more clear-headed when things go wrong.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "I am of the nature to have ill health. I cannot escape having ill health.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -960,9 +1170,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Quality Over Quantity",
     "goldenQuotes": [
-      "Teach me that the good of life does not depend on its length, but its employment.",
-      "It is possible, in fact very often so, that a man who has lived a long time has not lived enough.",
-      "When you always feel like your life is not complete... you’re never content."
+      {
+        "quote": "Teach me that the good of life does not depend on its length, but its employment.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "It is possible, in fact very often so, that a man who has lived a long time has not lived enough.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "When you always feel like your life is not complete... you’re never content.",
+        "author": "Seneca"
+      }
     ],
     "coreInsights": [
       {
@@ -994,8 +1213,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Wisdom as the Only Solace",
     "goldenQuotes": [
-      "No one can live happily, or even bearably, without the pursuit of wisdom.",
-      "Dedicate your life to wisdom. It’s the only way to live a consistently happy life."
+      {
+        "quote": "No one can live happily, or even bearably, without the pursuit of wisdom.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Dedicate your life to wisdom. It’s the only way to live a consistently happy life.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1027,9 +1252,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Equilibrium of Effort",
     "goldenQuotes": [
-      "The truth is we need to do hard things, to maintain equilibrium.",
-      "Nothing in life improves on its own without any form of nurturing.",
-      "Decide that you are an adult, and you are going to devote the rest of your life to making progress."
+      {
+        "quote": "The truth is we need to do hard things, to maintain equilibrium.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Nothing in life improves on its own without any form of nurturing.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Decide that you are an adult, and you are going to devote the rest of your life to making progress.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1061,8 +1295,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Liberation of Minimalism",
     "goldenQuotes": [
-      "You cannot really lose anything because you don’t own anything in the first place.",
-      "They are given to you for temporary keep. So never say, ‘I have lost something.’ You just returned it."
+      {
+        "quote": "You cannot really lose anything because you don’t own anything in the first place.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "They are given to you for temporary keep. So never say, ‘I have lost something.’ You just returned it.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1094,8 +1334,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Accidental vs. Intentional Living",
     "goldenQuotes": [
-      "It is shameful not to walk but to be carried, and suddenly dazed in the midst of worldly confusion to ask: ‘How did I come to this point?’",
-      "Your life shouldn’t be an accident."
+      {
+        "quote": "It is shameful not to walk but to be carried, and suddenly dazed in the midst of worldly confusion to ask: ‘How did I come to this point?’",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Your life shouldn’t be an accident.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1127,9 +1373,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Urgency of Now",
     "goldenQuotes": [
-      "Whether you’re 25 or 85, it always seems like you have a short time left...",
-      "Live as if you were alone — out in the wilderness.",
-      "But as we’re waiting, we keep on wasting today."
+      {
+        "quote": "Whether you’re 25 or 85, it always seems like you have a short time left...",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Live as if you were alone",
+        "author": "out in the wilderness."
+      },
+      {
+        "quote": "But as we’re waiting, we keep on wasting today.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1161,7 +1416,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Principle of Progression (Introductory)",
     "goldenQuotes": [
-      "Progress is not achieved by luck or accident, but by working on yourself daily."
+      {
+        "quote": "Progress is not achieved by luck or accident, but by working on yourself daily.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1193,8 +1451,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Discipline of Resilience",
     "goldenQuotes": [
-      "We will train both soul and body when we accustom ourselves to cold, heat, thirst, hunger, scarcity of food, hardness of bed, abstaining from pleasures, and enduring pains.",
-      "Only when you exert moderate effort can you maintain your strength, and potentially grow stronger."
+      {
+        "quote": "We will train both soul and body when we accustom ourselves to cold, heat, thirst, hunger, scarcity of food, hardness of bed, abstaining from pleasures, and enduring pains.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Only when you exert moderate effort can you maintain your strength, and potentially grow stronger.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1226,8 +1490,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Art of Making Do",
     "goldenQuotes": [
-      "Until we have begun to go without them, we fail to realize how unnecessary many things are.",
-      "The only things we really can’t live without are the basics — water, food, shelter. Other things are optional."
+      {
+        "quote": "Until we have begun to go without them, we fail to realize how unnecessary many things are.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The only things we really can’t live without are the basics",
+        "author": "water, food, shelter. Other things are optional."
+      }
     ],
     "coreInsights": [
       {
@@ -1259,8 +1529,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Pedagogy of Error",
     "goldenQuotes": [
-      "To err is human, but to persist (in the mistake) is diabolical.",
-      "The unexamined life is not worth living."
+      {
+        "quote": "To err is human, but to persist (in the mistake) is diabolical.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The unexamined life is not worth living.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1292,8 +1568,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Rewriting the Internal Script",
     "goldenQuotes": [
-      "You have the power to change your self-talk if you want.",
-      "No one ever got worse by trying to be better."
+      {
+        "quote": "You have the power to change your self-talk if you want.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "No one ever got worse by trying to be better.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1325,8 +1607,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Wisdom into Action",
     "goldenQuotes": [
-      "Your job is to perform in this game called life. And to perform, you need two things: A plan, and stamina.",
-      "Don’t just learn things. Turn everything you learn into an activity."
+      {
+        "quote": "Your job is to perform in this game called life. And to perform, you need two things: A plan, and stamina.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Don’t just learn things. Turn everything you learn into an activity.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1358,8 +1646,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Internal Fortification",
     "goldenQuotes": [
-      "Each day acquire something that will fortify you against poverty, against death, indeed against other misfortunes as well.",
-      "The REAL reward you acquire is not the money or status, it’s the energy, pride, and sense of accomplishment."
+      {
+        "quote": "Each day acquire something that will fortify you against poverty, against death, indeed against other misfortunes as well.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "The REAL reward you acquire is not the money or status, it’s the energy, pride, and sense of accomplishment.",
+        "author": "Seneca"
+      }
     ],
     "coreInsights": [
       {
@@ -1391,8 +1685,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Grace of Self-Forgiveness",
     "goldenQuotes": [
-      "When you blame yourself for your negative feelings, you are making progress.",
-      "It’s always foolish to blame yourself for things that happen in life."
+      {
+        "quote": "When you blame yourself for your negative feelings, you are making progress.",
+        "author": "Epictetus"
+      },
+      {
+        "quote": "It’s always foolish to blame yourself for things that happen in life.",
+        "author": "Epictetus"
+      }
     ],
     "coreInsights": [
       {
@@ -1424,8 +1724,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Loneliness of Growth",
     "goldenQuotes": [
-      "There’ll still be people standing around the bed who will welcome the sad event.",
-      "The best thing we can do is to never be like the negative people on this planet."
+      {
+        "quote": "There’ll still be people standing around the bed who will welcome the sad event.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The best thing we can do is to never be like the negative people on this planet.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1457,8 +1763,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Embracing Discomfort",
     "goldenQuotes": [
-      "Hardship is good. Too much pleasure is bad.",
-      "The soul is strengthened as it is trained for courage by enduring hardships."
+      {
+        "quote": "Hardship is good. Too much pleasure is bad.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The soul is strengthened as it is trained for courage by enduring hardships.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1490,7 +1802,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Navigating Society (Section Intro)",
     "goldenQuotes": [
-      "Happiness is not only being able to live well with yourself... We have to find a way to be comfortable in society as well."
+      {
+        "quote": "Happiness is not only being able to live well with yourself... We have to find a way to be comfortable in society as well.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1554,7 +1869,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Virtue Over Victory (Intro)",
     "goldenQuotes": [
-      "It is in virtue that happiness consists, for virtue is the state of mind which tends to make the whole of life harmonious."
+      {
+        "quote": "It is in virtue that happiness consists, for virtue is the state of mind which tends to make the whole of life harmonious.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1602,8 +1920,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Hidden Costs of Ambition",
     "goldenQuotes": [
-      "You pay a price to play a game.",
-      "The moment you have to exchange your values for money, you always come to the same conclusion: It’s just not worth it."
+      {
+        "quote": "You pay a price to play a game.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The moment you have to exchange your values for money, you always come to the same conclusion: It’s just not worth it.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1635,8 +1959,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Absolute Freedom",
     "goldenQuotes": [
-      "To be free is to not give power to fortune.",
-      "When you have nothing, everything else in life is a bonus."
+      {
+        "quote": "To be free is to not give power to fortune.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "When you have nothing, everything else in life is a bonus.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1668,9 +1998,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Trap of \"More\"",
     "goldenQuotes": [
-      "Mo money, mo problems.",
-      "How often have you sacrificed your inner peace for some sort of success?",
-      "Success is greedy and exposed to the greed of others."
+      {
+        "quote": "Mo money, mo problems.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "How often have you sacrificed your inner peace for some sort of success?",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Success is greedy and exposed to the greed of others.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1702,8 +2041,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Action Over Outcome",
     "goldenQuotes": [
-      "The problem is that we often set bad goals. And when we do that, we actually set ourselves up for failure.",
-      "Everything is in your hands now. You don’t depend on anyone for the outcomes."
+      {
+        "quote": "The problem is that we often set bad goals. And when we do that, we actually set ourselves up for failure.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Everything is in your hands now. You don’t depend on anyone for the outcomes.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1735,8 +2080,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Overcoming Envy",
     "goldenQuotes": [
-      "I grow stronger and more triumphant... whenever I realize from your actions and writings how much you have projected yourself beyond yourself.",
-      "Jealousy is a prevalent emotion that leads to negativity and unhappiness."
+      {
+        "quote": "I grow stronger and more triumphant... whenever I realize from your actions and writings how much you have projected yourself beyond yourself.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Jealousy is a prevalent emotion that leads to negativity and unhappiness.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1768,7 +2119,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Wise Use of Resources (Intro)",
     "goldenQuotes": [
-      "Wise people are in want of nothing, and yet need many things. On the other hand, nothing is needed by fools... but are in want of everything."
+      {
+        "quote": "Wise people are in want of nothing, and yet need many things. On the other hand, nothing is needed by fools... but are in want of everything.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1816,9 +2170,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Wealth Without Corruption",
     "goldenQuotes": [
-      "If you can make money remaining honest, trustworthy, and dignified, by all means; do it.",
-      "Life’s too short to let money dictate our lives to an extreme.",
-      "Values and character hold greater significance than wealth."
+      {
+        "quote": "If you can make money remaining honest, trustworthy, and dignified, by all means; do it.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Life’s too short to let money dictate our lives to an extreme.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Values and character hold greater significance than wealth.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1850,8 +2213,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Reputation vs. Revenue",
     "goldenQuotes": [
-      "It takes 20 years to build a reputation and five minutes to ruin it.",
-      "A good friend would rather you didn’t compromise your integrity than wish you gave him money."
+      {
+        "quote": "It takes 20 years to build a reputation and five minutes to ruin it.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "A good friend would rather you didn’t compromise your integrity than wish you gave him money.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1883,8 +2252,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Myth of Exceptionalism",
     "goldenQuotes": [
-      "A life of excess only leads to more excess.",
-      "Moderation is useful and life-enhancing, whereas excess harms by its abundance."
+      {
+        "quote": "A life of excess only leads to more excess.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Moderation is useful and life-enhancing, whereas excess harms by its abundance.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1916,8 +2291,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Money as a Tool, Not a Master",
     "goldenQuotes": [
-      "The man who needs wealth is afraid of it... He is eager to add something to it, and while he is concentrating on the increase he has forgotten to use it.",
-      "Isn’t the true definition of being wealthy not having to worry about money?"
+      {
+        "quote": "The man who needs wealth is afraid of it... He is eager to add something to it, and while he is concentrating on the increase he has forgotten to use it.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Isn’t the true definition of being wealthy not having to worry about money?",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -1949,8 +2330,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Action Speaks Louder",
     "goldenQuotes": [
-      "When we try to tell people about Stoicism... we’re actually making a show of our principles.",
-      "Sheep don’t bring their owners grass to show how much they ate."
+      {
+        "quote": "When we try to tell people about Stoicism... we’re actually making a show of our principles.",
+        "author": "Epictetus"
+      },
+      {
+        "quote": "Sheep don’t bring their owners grass to show how much they ate.",
+        "author": "Epictetus"
+      }
     ],
     "coreInsights": [
       {
@@ -1982,7 +2369,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Long Game (Introductory)",
     "goldenQuotes": [
-      "If you accomplish something good with hard work, the labor passes quickly, but the good endures; if you do something shameful in pursuit of pleasure, the pleasure passes quickly, but the shame endures."
+      {
+        "quote": "If you accomplish something good with hard work, the labor passes quickly, but the good endures; if you do something shameful in pursuit of pleasure, the pleasure passes quickly, but the shame endures.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2030,9 +2420,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Productive Rest",
     "goldenQuotes": [
-      "Rest before you are tired.",
-      "Sometimes rest itself is restless.",
-      "If you find pleasure in your work, you won’t yearn for rest all the time."
+      {
+        "quote": "Rest before you are tired.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Sometimes rest itself is restless.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "If you find pleasure in your work, you won’t yearn for rest all the time.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2064,8 +2463,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Playing Your Role",
     "goldenQuotes": [
-      "Consider yourself as an actor in a play. The nature of the play... is for the director to decide.",
-      "It’s not that our lives are bad; we just think our lives are bad and expect that could or should be limitless and extraordinary."
+      {
+        "quote": "Consider yourself as an actor in a play. The nature of the play... is for the director to decide.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "It’s not that our lives are bad; we just think our lives are bad and expect that could or should be limitless and extraordinary.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2097,8 +2502,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Integrity in Solitude",
     "goldenQuotes": [
-      "Be your own witness if you need one. You don’t need any more witness than that.",
-      "What do you do when no one’s watching? Your actions during those moments define you."
+      {
+        "quote": "Be your own witness if you need one. You don’t need any more witness than that.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "What do you do when no one’s watching? Your actions during those moments define you.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2130,8 +2541,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Precision of Speech",
     "goldenQuotes": [
-      "If someone bathes quickly, don’t say he doesn’t bathe properly, say he bathes quickly.",
-      "To live like a Stoic, practice precision in your words."
+      {
+        "quote": "If someone bathes quickly, don’t say he doesn’t bathe properly, say he bathes quickly.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "To live like a Stoic, practice precision in your words.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2163,8 +2580,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Essentialism",
     "goldenQuotes": [
-      "If you seek tranquility, do less.",
-      "Ask yourself at every moment, ‘Is this necessary?’"
+      {
+        "quote": "If you seek tranquility, do less.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Ask yourself at every moment, ‘Is this necessary?’",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2196,8 +2619,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Habit of Completion",
     "goldenQuotes": [
-      "In life, sometimes it’s more important that you see your plans through until the end than to have the perfect plan.",
-      "If you do what you say, you become reliable."
+      {
+        "quote": "In life, sometimes it’s more important that you see your plans through until the end than to have the perfect plan.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "If you do what you say, you become reliable.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2229,8 +2658,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Action is Destiny",
     "goldenQuotes": [
-      "By changing your actions today, you can shape your tomorrow.",
-      "Instead of getting frustrated... look at how you feel at the end of the day."
+      {
+        "quote": "By changing your actions today, you can shape your tomorrow.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Instead of getting frustrated... look at how you feel at the end of the day.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2262,7 +2697,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Paradox of Social Validation (Intro)",
     "goldenQuotes": [
-      "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own."
+      {
+        "quote": "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2310,8 +2748,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Quiet Life",
     "goldenQuotes": [
-      "If you have chosen a simple life, don’t make a show of it.",
-      "Just let others be."
+      {
+        "quote": "If you have chosen a simple life, don’t make a show of it.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Just let others be.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2343,8 +2787,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Mirror of Faults",
     "goldenQuotes": [
-      "When faced with people’s bad behavior, turn around and ask when you have acted like that.",
-      "Have you noticed how we’re often quick to judge others... but don’t look at ourselves with that same critical eye?"
+      {
+        "quote": "When faced with people’s bad behavior, turn around and ask when you have acted like that.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Have you noticed how we’re often quick to judge others... but don’t look at ourselves with that same critical eye?",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2376,8 +2826,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Quality over Quantity",
     "goldenQuotes": [
-      "A friend is someone who thinks and cares about you... even when you don’t see or need each other.",
-      "Seek out people who have the same values as you. Friendship is not about quantity."
+      {
+        "quote": "A friend is someone who thinks and cares about you... even when you don’t see or need each other.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "Seek out people who have the same values as you. Friendship is not about quantity.",
+        "author": "Seneca"
+      }
     ],
     "coreInsights": [
       {
@@ -2409,8 +2865,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Grace of Patience",
     "goldenQuotes": [
-      "Always conduct yourself as though you are at a formal dinner.",
-      "Be gentle in your interactions with others and with yourself."
+      {
+        "quote": "Always conduct yourself as though you are at a formal dinner.",
+        "author": "Epictetus"
+      },
+      {
+        "quote": "Be gentle in your interactions with others and with yourself.",
+        "author": "Epictetus"
+      }
     ],
     "coreInsights": [
       {
@@ -2442,9 +2904,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Comparison Trap",
     "goldenQuotes": [
-      "Don’t be fooled by the outward appearance of other people.",
-      "Our concern should be our freedom, not titles and prestigious positions.",
-      "Every time you feel envious, check your priorities."
+      {
+        "quote": "Don’t be fooled by the outward appearance of other people.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Our concern should be our freedom, not titles and prestigious positions.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Every time you feel envious, check your priorities.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2476,8 +2947,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Path of Non-Conformity",
     "goldenQuotes": [
-      "The happy people usually don’t care about what others think.",
-      "You do not care if others think you are naïve or stupid. Your only concern is to keep your focus on yourself."
+      {
+        "quote": "The happy people usually don’t care about what others think.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "You do not care if others think you are naïve or stupid. Your only concern is to keep your focus on yourself.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2509,8 +2986,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Shared Happiness",
     "goldenQuotes": [
-      "There’s no enjoying the possession of anything valuable unless one has someone to share it with.",
-      "No matter how cool or badass you are, it’s good to let people know you appreciate them."
+      {
+        "quote": "There’s no enjoying the possession of anything valuable unless one has someone to share it with.",
+        "author": "Seneca"
+      },
+      {
+        "quote": "No matter how cool or badass you are, it’s good to let people know you appreciate them.",
+        "author": "Seneca"
+      }
     ],
     "coreInsights": [
       {
@@ -2542,7 +3025,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Clouds and the Sun (Intro)",
     "goldenQuotes": [
-      "Even if some obstacle comes on the scene, its appearance is only to be compared to that of clouds which drift in front of the sun without ever defeating its light."
+      {
+        "quote": "Even if some obstacle comes on the scene, its appearance is only to be compared to that of clouds which drift in front of the sun without ever defeating its light.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2590,7 +3076,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Crisis Management",
     "goldenQuotes": [
-      "Fortune falls heavily on those for whom she’s unexpected. The one always on the lookout easily endures."
+      {
+        "quote": "Fortune falls heavily on those for whom she’s unexpected. The one always on the lookout easily endures.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2622,8 +3111,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Math of Mortality",
     "goldenQuotes": [
-      "We hardly ever regret the things we did. Instead, we regret the things we didn’t do.",
-      "Just being alive is the biggest thing one can be grateful for."
+      {
+        "quote": "We hardly ever regret the things we did. Instead, we regret the things we didn’t do.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Just being alive is the biggest thing one can be grateful for.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2655,8 +3150,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Embracing the Cycle",
     "goldenQuotes": [
-      "The world’s cycles never change — up and down, from age to age.",
-      "When things are good, simply enjoy. When things are bad, go through it."
+      {
+        "quote": "The world’s cycles never change — up and down, from age to age.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "When things are good, simply enjoy. When things are bad, go through it.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2688,8 +3189,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Breaking the Spiral",
     "goldenQuotes": [
-      "One little negative thing can set you on this whole downward spiral.",
-      "When you work on something that’s important to you, you feel that your days have meaning."
+      {
+        "quote": "One little negative thing can set you on this whole downward spiral.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "When you work on something that’s important to you, you feel that your days have meaning.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2721,9 +3228,18 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Relentless Consistency",
     "goldenQuotes": [
-      "The way you treat small problems becomes how you treat big ones.",
-      "If you know you’re doing the right thing, don’t let anyone stop you.",
-      "Never miss."
+      {
+        "quote": "The way you treat small problems becomes how you treat big ones.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "If you know you’re doing the right thing, don’t let anyone stop you.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Never miss.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2755,8 +3271,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Taking Charge",
     "goldenQuotes": [
-      "Make the best use of what is in your power, and take the rest as it happens.",
-      "Let us commit to making the best of any situation."
+      {
+        "quote": "Make the best use of what is in your power, and take the rest as it happens.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "Let us commit to making the best of any situation.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2788,8 +3310,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "The Inner Ally",
     "goldenQuotes": [
-      "What progress, you ask, have I made? I have begun to be a friend to myself.",
-      "He who is a friend to himself is a friend to all mankind."
+      {
+        "quote": "What progress, you ask, have I made? I have begun to be a friend to myself.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "He who is a friend to himself is a friend to all mankind.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2821,8 +3349,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Economic Stoicism",
     "goldenQuotes": [
-      "Do not seek to have events happen as you want them but instead want them to happen and your life will go well.",
-      "The good thing about the economy is that unlike a company or a person, it never dies."
+      {
+        "quote": "Do not seek to have events happen as you want them but instead want them to happen and your life will go well.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "The good thing about the economy is that unlike a company or a person, it never dies.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2854,8 +3388,14 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Outer World",
     "chapterTitle": "Making Peace with Mortality (The Conclusion)",
     "goldenQuotes": [
-      "You don’t want to be a slave to anything. You want to be free. So be free — of everything.",
-      "When we’re sick, we should respect the signals our body sends us. When we age, we should be proud instead of trying to hide."
+      {
+        "quote": "You don’t want to be a slave to anything. You want to be free. So be free — of everything.",
+        "author": "Stoic Wisdom"
+      },
+      {
+        "quote": "When we’re sick, we should respect the signals our body sends us. When we age, we should be proud instead of trying to hide.",
+        "author": "Stoic Wisdom"
+      }
     ],
     "coreInsights": [
       {
@@ -2886,4 +3426,4 @@ export const chapters: Chapter[] = [
 
 export const getChapterById = (id: number) => chapters.find(c => c.id === id);
 export const getSectionForChapter = (id: number) => sections.find(s => s.chapters.includes(id));
-export const getAllGoldenQuotes = () => chapters.flatMap(c => c.goldenQuotes.map(q => ({ quote: q, chapterId: c.id, chapterTitle: c.chapterTitle })));
+export const getAllGoldenQuotes = () => chapters.flatMap(c => c.goldenQuotes.map(q => ({ quote: q.quote, author: q.author, chapterId: c.id, chapterTitle: c.chapterTitle })));

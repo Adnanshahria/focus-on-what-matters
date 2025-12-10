@@ -44,7 +44,7 @@ export function buildSearchIndex(): Index {
             this.add({
                 id: chapter.id,
                 chapterTitle: chapter.chapterTitle,
-                goldenQuotes: chapter.goldenQuotes.join(' '),
+                goldenQuotes: chapter.goldenQuotes.map(q => q.quote + ' ' + q.author).join(' '),
                 criticalReflection: chapter.criticalReflection,
                 expectedOutcomesIndividual: chapter.expectedOutcomes.individual,
                 expectedOutcomesSocial: chapter.expectedOutcomes.social,
@@ -79,7 +79,7 @@ export function searchChapters(query: string): SearchResult[] {
             if (chapter.chapterTitle.toLowerCase().includes(queryLower)) {
                 matchedFields.push('title');
             }
-            if (chapter.goldenQuotes.some(q => q.toLowerCase().includes(queryLower))) {
+            if (chapter.goldenQuotes.some(q => q.quote.toLowerCase().includes(queryLower) || q.author.toLowerCase().includes(queryLower))) {
                 matchedFields.push('quotes');
             }
             if (chapter.coreInsights.some(i =>
@@ -103,7 +103,7 @@ export function searchChapters(query: string): SearchResult[] {
             .filter(ch => {
                 const searchText = [
                     ch.chapterTitle,
-                    ...ch.goldenQuotes,
+                    ...ch.goldenQuotes.map(q => q.quote + ' ' + q.author),
                     ...ch.coreInsights.map(i => i.title + ' ' + i.content),
                     ch.practicalApplication
                 ].join(' ').toLowerCase();
