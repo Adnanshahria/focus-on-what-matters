@@ -419,10 +419,11 @@ a:hover {
 /* Search Results */
 .search-container .search-results {
   position: absolute;
-  top: calc(100% + var(--space-2));
+  top: calc(100% + var(--space-4));
   right: 0;
-  width: 320px;
-  max-width: 90vw;
+  width: 280px;
+  /* Match input wrapper width */
+  max-width: calc(100vw - 2rem);
   z-index: var(--z-tooltip);
   max-height: 400px;
   overflow-y: auto;
