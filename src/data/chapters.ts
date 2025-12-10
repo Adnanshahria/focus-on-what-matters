@@ -31,10 +31,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Foundation of Inner Stability",
     "goldenQuotes": [
-      "All improvement starts within.",
-      "We can’t be happy and comfortable in the world if we are not the same in our minds.",
-      "With Stoic wisdom, we can guard our minds against the things that disrupt our happiness.",
-      "A strong mind is a peaceful mind."
+      "All improvement starts within. — Darius Foroux",
+      "We can’t be happy and comfortable in the world if we are not the same in our minds. — Darius Foroux",
+      "With Stoic wisdom, we can guard our minds against the things that disrupt our happiness. — Darius Foroux",
+      "A strong mind is a peaceful mind. — Darius Foroux"
     ],
     "coreInsights": [
       {
@@ -98,10 +98,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Dichotomy of Control",
     "goldenQuotes": [
-      "It’s so important to only focus on what you control.",
-      "Time is your most valuable resource.",
-      "Without accepting that we don’t control most things in life, we can never have lasting happiness.",
-      "What actually matters to your happiness? Good friendships, work that you enjoy, reading books that make you think, walking in nature, working out, watching a good movie — you know this."
+      "It’s so important to only focus on what you control. — Epictetus",
+      "Time is your most valuable resource. — Darius Foroux",
+      "Without accepting that we don’t control most things in life, we can never have lasting happiness. — Darius Foroux",
+      "What actually matters to your happiness? Good friendships, work that you enjoy, reading books that make you think, walking in nature, working out, watching a good movie — you know this. — Darius Foroux"
     ],
     "coreInsights": [
       {
@@ -133,8 +133,8 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Emotional Boundaries and Autonomy",
     "goldenQuotes": [
-      "When we decide to change our view of the world, it’s an internal decision.",
-      "That’s how you protect your mood: By not feeling responsible for how others feel."
+      "When we decide to change our view of the world, it’s an internal decision. — Darius Foroux",
+      "That’s how you protect your mood: By not feeling responsible for how others feel. — Darius Foroux"
     ],
     "coreInsights": [
       {
@@ -166,10 +166,10 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Knowledge as Fuel",
     "goldenQuotes": [
-      "When you’re lost, unfocused, or lacking motivation, grab a book about a topic you’re interested in.",
-      "If you don’t have a higher purpose, you can make the pursuit of knowledge your purpose.",
-      "Effort nourishes noble spirits.",
-      "When you keep learning, you will never be unmotivated for longer than a few days."
+      "When you’re lost, unfocused, or lacking motivation, grab a book about a topic you’re interested in. — Darius Foroux",
+      "If you don’t have a higher purpose, you can make the pursuit of knowledge your purpose. — Darius Foroux",
+      "Effort nourishes noble spirits. — Seneca",
+      "When you keep learning, you will never be unmotivated for longer than a few days. — Darius Foroux"
     ],
     "coreInsights": [
       {
@@ -236,8 +236,8 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "The Fortress of Zero Expectations",
     "goldenQuotes": [
-      "You are being foolish if you expect your children, spouse, or friends to live forever... It is equally naïve to expect everyone will be honest.",
-      "To avoid disappointment, I kept focusing on what I control: My actions and belief in the book."
+      "You are being foolish if you expect your children, spouse, or friends to live forever... It is equally naïve to expect everyone will be honest. — Epictetus",
+      "To avoid disappointment, I kept focusing on what I control: My actions and belief in the book. — Darius Foroux"
     ],
     "coreInsights": [
       {
