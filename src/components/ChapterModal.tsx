@@ -1,13 +1,78 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import type { Chapter } from '../data/chapters';
 
 interface ChapterModalProps {
     chapter: Chapter;
     onClose: () => void;
+    onPrevChapter?: () => void;
+    onNextChapter?: () => void;
+    hasPrevChapter?: boolean;
+    hasNextChapter?: boolean;
 }
 
-export function ChapterModal({ chapter, onClose }: ChapterModalProps) {
+// Tab order for swipe navigation
+const TAB_ORDER: Array<'insights' | 'practice' | 'reflection' | 'quotes'> = [
+    'insights', 'practice', 'reflection', 'quotes'
+];
+
+export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, hasPrevChapter, hasNextChapter }: ChapterModalProps) {
     const [activeTab, setActiveTab] = useState<'insights' | 'quotes' | 'practice' | 'reflection'>('insights');
+
+    // Swipe handling - track both X and Y coordinates
+    const touchStartX = useRef<number>(0);
+    const touchEndX = useRef<number>(0);
+    const touchStartY = useRef<number>(0);
+    const touchEndY = useRef<number>(0);
+    const contentRef = useRef<HTMLDivElement>(null);
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+        touchStartX.current = e.targetTouches[0].clientX;
+        touchStartY.current = e.targetTouches[0].clientY;
+    };
+
+    const handleTouchMove = (e: React.TouchEvent) => {
+        touchEndX.current = e.targetTouches[0].clientX;
+        touchEndY.current = e.targetTouches[0].clientY;
+    };
+
+    const handleTouchEnd = () => {
+        const swipeThreshold = 50;
+        const diffX = touchStartX.current - touchEndX.current;
+        const diffY = touchStartY.current - touchEndY.current;
+
+        // Determine if swipe is more horizontal or vertical
+        const isHorizontalSwipe = Math.abs(diffX) > Math.abs(diffY);
+
+        if (isHorizontalSwipe && Math.abs(diffX) > swipeThreshold) {
+            // Horizontal swipe - switch tabs
+            const currentIndex = TAB_ORDER.indexOf(activeTab);
+
+            if (diffX > 0) {
+                // Swiped left - go to next tab
+                const nextIndex = (currentIndex + 1) % TAB_ORDER.length;
+                setActiveTab(TAB_ORDER[nextIndex]);
+            } else {
+                // Swiped right - go to previous tab
+                const prevIndex = (currentIndex - 1 + TAB_ORDER.length) % TAB_ORDER.length;
+                setActiveTab(TAB_ORDER[prevIndex]);
+            }
+        } else if (!isHorizontalSwipe && Math.abs(diffY) > swipeThreshold) {
+            // Vertical swipe - switch chapters
+            if (diffY > 0 && hasNextChapter && onNextChapter) {
+                // Swiped up - go to next chapter
+                onNextChapter();
+            } else if (diffY < 0 && hasPrevChapter && onPrevChapter) {
+                // Swiped down - go to previous chapter
+                onPrevChapter();
+            }
+        }
+
+        // Reset values
+        touchStartX.current = 0;
+        touchEndX.current = 0;
+        touchStartY.current = 0;
+        touchEndY.current = 0;
+    };
 
     // Close on escape key
     useEffect(() => {
@@ -47,7 +112,13 @@ export function ChapterModal({ chapter, onClose }: ChapterModalProps) {
                     </button>
                 </header>
 
-                <div className="modal-content">
+                <div
+                    className="modal-content"
+                    ref={contentRef}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={handleTouchEnd}
+                >
                     {/* Tab Navigation */}
                     <nav className="content-tabs">
                         <button

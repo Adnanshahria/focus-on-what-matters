@@ -35,6 +35,23 @@ function App() {
 
   const selectedChapter = selectedChapterId ? chapters.find(c => c.id === selectedChapterId) : null;
 
+  // Find current chapter index for navigation
+  const currentChapterIndex = selectedChapterId ? chapters.findIndex(c => c.id === selectedChapterId) : -1;
+  const hasPrevChapter = currentChapterIndex > 0;
+  const hasNextChapter = currentChapterIndex < chapters.length - 1 && currentChapterIndex >= 0;
+
+  const handlePrevChapter = () => {
+    if (hasPrevChapter) {
+      setSelectedChapterId(chapters[currentChapterIndex - 1].id);
+    }
+  };
+
+  const handleNextChapter = () => {
+    if (hasNextChapter) {
+      setSelectedChapterId(chapters[currentChapterIndex + 1].id);
+    }
+  };
+
   return (
     <Layout onSearch={handleSearchSelect}>
       {/* Hero Section */}
@@ -111,6 +128,10 @@ function App() {
         <ChapterModal
           chapter={selectedChapter}
           onClose={() => setSelectedChapterId(null)}
+          onPrevChapter={handlePrevChapter}
+          onNextChapter={handleNextChapter}
+          hasPrevChapter={hasPrevChapter}
+          hasNextChapter={hasNextChapter}
         />
       )}
 

@@ -911,6 +911,48 @@
     flex-shrink: 0;
     min-height: 44px;
   }
+
+  /* Center the section navigation pills (Inner/Outer World) */
+  .section-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    overflow-x: visible;
+    padding: 0 var(--space-4);
+  }
+
+  .section-pill {
+    flex: 0 1 auto;
+    min-width: 140px;
+    text-align: center;
+  }
+
+  /* Swipeable tabs visual indicator */
+  .content-tabs {
+    position: relative;
+  }
+
+  .content-tabs::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background: linear-gradient(to left, var(--bg-primary) 0%, transparent 100%);
+    pointer-events: none;
+  }
+
+  /* Tab content swipe animation */
+  .tab-content {
+    touch-action: pan-y pinch-zoom;
+    user-select: none;
+  }
+
+  /* Swipe hint animation on first load */
+  .modal-content {
+    position: relative;
+  }
 }
 
 /* ================================
