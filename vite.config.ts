@@ -2,9 +2,13 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
+// Detect if building for GitHub Pages
+const isGitHubPages = process.env.GITHUB_ACTIONS === 'true' || process.env.DEPLOY_TARGET === 'gh-pages'
+
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/focus-on-what-matters/',
+  // Only use base path for GitHub Pages, not for Vercel/other hosts
+  base: isGitHubPages ? '/focus-on-what-matters/' : '/',
   plugins: [
     react(),
     VitePWA({
@@ -14,11 +18,12 @@ export default defineConfig({
         name: 'Focus on What Matters',
         short_name: 'Stoic Reader',
         description: 'A Modern Stoic Reader - 83 chapters of Stoic wisdom with Golden Quotes and Bengali summaries',
-        theme_color: '#10b981',
+        // Dark navy color matching the app theme
+        theme_color: '#0a0f1a',
         background_color: '#0a0f1a',
         display: 'standalone',
-        scope: '/focus-on-what-matters/',
-        start_url: '/focus-on-what-matters/',
+        scope: isGitHubPages ? '/focus-on-what-matters/' : '/',
+        start_url: isGitHubPages ? '/focus-on-what-matters/' : '/',
         icons: [
           {
             src: 'icon-192.png',
@@ -43,7 +48,7 @@ export default defineConfig({
               cacheName: 'google-fonts-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365
               },
               cacheableResponse: {
                 statuses: [0, 200]
@@ -57,7 +62,7 @@ export default defineConfig({
               cacheName: 'gstatic-fonts-cache',
               expiration: {
                 maxEntries: 10,
-                maxAgeSeconds: 60 * 60 * 24 * 365 // 1 year
+                maxAgeSeconds: 60 * 60 * 24 * 365
               },
               cacheableResponse: {
                 statuses: [0, 200]
