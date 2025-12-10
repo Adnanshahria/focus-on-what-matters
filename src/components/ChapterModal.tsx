@@ -23,22 +23,38 @@ export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, h
     const touchEndX = useRef<number>(0);
     const touchStartY = useRef<number>(0);
     const touchEndY = useRef<number>(0);
+    const isSwiping = useRef<boolean>(false);
     const contentRef = useRef<HTMLDivElement>(null);
 
     const handleTouchStart = (e: React.TouchEvent) => {
-        touchStartX.current = e.targetTouches[0].clientX;
-        touchStartY.current = e.targetTouches[0].clientY;
+        const touch = e.touches[0];
+        touchStartX.current = touch.clientX;
+        touchStartY.current = touch.clientY;
+        // Initialize end values to start values to handle quick swipes
+        touchEndX.current = touch.clientX;
+        touchEndY.current = touch.clientY;
+        isSwiping.current = true;
     };
 
     const handleTouchMove = (e: React.TouchEvent) => {
-        touchEndX.current = e.targetTouches[0].clientX;
-        touchEndY.current = e.targetTouches[0].clientY;
+        if (!isSwiping.current) return;
+        const touch = e.touches[0];
+        touchEndX.current = touch.clientX;
+        touchEndY.current = touch.clientY;
     };
 
     const handleTouchEnd = () => {
+        if (!isSwiping.current) return;
+        isSwiping.current = false;
+
         const swipeThreshold = 50;
         const diffX = touchStartX.current - touchEndX.current;
         const diffY = touchStartY.current - touchEndY.current;
+
+        // Only process if there was actual movement
+        if (Math.abs(diffX) < 10 && Math.abs(diffY) < 10) {
+            return; // This was a tap, not a swipe
+        }
 
         // Determine if swipe is more horizontal or vertical
         const isHorizontalSwipe = Math.abs(diffX) > Math.abs(diffY);
@@ -66,12 +82,6 @@ export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, h
                 onPrevChapter();
             }
         }
-
-        // Reset values
-        touchStartX.current = 0;
-        touchEndX.current = 0;
-        touchStartY.current = 0;
-        touchEndY.current = 0;
     };
 
     // Close on escape key
