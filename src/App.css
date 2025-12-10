@@ -454,6 +454,89 @@
 
 .tab-content {
   animation: fadeIn 0.3s ease;
+  transition: transform 0.15s ease-out, opacity 0.15s ease-out;
+}
+
+.tab-content--slide-left {
+  transform: translateX(-20px);
+  opacity: 0.5;
+}
+
+.tab-content--slide-right {
+  transform: translateX(20px);
+  opacity: 0.5;
+}
+
+.tab-content--none {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Pull Indicator for Chapter Navigation */
+.pull-indicator {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: var(--space-3);
+  margin-bottom: var(--space-3);
+  border-radius: var(--radius-md);
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid var(--accent-primary);
+  animation: pulse-border 0.5s ease-in-out infinite;
+}
+
+.pull-indicator--up {
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.pull-indicator--down {
+  background: rgba(245, 158, 11, 0.15);
+  border-color: var(--accent-secondary);
+}
+
+.pull-indicator__bar {
+  height: 6px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
+.pull-indicator__progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-tertiary));
+  border-radius: var(--radius-full);
+  transition: width 0.05s linear;
+}
+
+.pull-indicator--down .pull-indicator__progress {
+  background: linear-gradient(90deg, var(--accent-secondary), #f59e0b);
+}
+
+.pull-indicator__text {
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.pull-indicator--down .pull-indicator__text {
+  color: var(--accent-secondary);
+}
+
+@keyframes pulse-border {
+
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+  }
 }
 
 /* Insights Grid */

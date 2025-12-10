@@ -17,8 +17,13 @@ const TAB_ORDER: Array<'insights' | 'practice' | 'reflection' | 'quotes'> = [
 
 export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, hasPrevChapter, hasNextChapter }: ChapterModalProps) {
     const [activeTab, setActiveTab] = useState<'insights' | 'quotes' | 'practice' | 'reflection'>('insights');
+    const [tabTransition, setTabTransition] = useState<'none' | 'slide-left' | 'slide-right'>('none');
 
-    // Swipe handling - track both X and Y coordinates
+    // Pull-to-change-chapter state
+    const [pullDirection, setPullDirection] = useState<'up' | 'down' | null>(null);
+    const [pullProgress, setPullProgress] = useState(0); // 0 to 100
+
+    // Swipe handling refs
     const touchStartX = useRef<number>(0);
     const touchEndX = useRef<number>(0);
     const touchStartY = useRef<number>(0);
@@ -26,11 +31,25 @@ export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, h
     const isSwiping = useRef<boolean>(false);
     const contentRef = useRef<HTMLDivElement>(null);
 
+    // Pull-hold timer refs
+    const pullTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+    const pullStartTime = useRef<number>(0);
+    const HOLD_DURATION = 2500; // 2.5 seconds
+
+    const clearPullTimer = () => {
+        if (pullTimerRef.current) {
+            clearInterval(pullTimerRef.current);
+            pullTimerRef.current = null;
+        }
+        setPullDirection(null);
+        setPullProgress(0);
+        pullStartTime.current = 0;
+    };
+
     const handleTouchStart = (e: React.TouchEvent) => {
         const touch = e.touches[0];
         touchStartX.current = touch.clientX;
         touchStartY.current = touch.clientY;
-        // Initialize end values to start values to handle quick swipes
         touchEndX.current = touch.clientX;
         touchEndY.current = touch.clientY;
         isSwiping.current = true;
@@ -41,48 +60,90 @@ export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, h
         const touch = e.touches[0];
         touchEndX.current = touch.clientX;
         touchEndY.current = touch.clientY;
+
+        const diffY = touchStartY.current - touchEndY.current;
+        const diffX = touchStartX.current - touchEndX.current;
+        const isVerticalPull = Math.abs(diffY) > Math.abs(diffX) && Math.abs(diffY) > 30;
+
+        if (isVerticalPull) {
+            const direction = diffY > 0 ? 'up' : 'down';
+            const canNavigate = (direction === 'up' && hasNextChapter) || (direction === 'down' && hasPrevChapter);
+
+            if (canNavigate) {
+                // Start or continue the pull timer
+                if (pullDirection !== direction) {
+                    clearPullTimer();
+                    setPullDirection(direction);
+                    pullStartTime.current = Date.now();
+
+                    pullTimerRef.current = setInterval(() => {
+                        const elapsed = Date.now() - pullStartTime.current;
+                        const progress = Math.min((elapsed / HOLD_DURATION) * 100, 100);
+                        setPullProgress(progress);
+
+                        if (progress >= 100) {
+                            clearPullTimer();
+                            // Trigger chapter change
+                            if (direction === 'up' && onNextChapter) {
+                                onNextChapter();
+                            } else if (direction === 'down' && onPrevChapter) {
+                                onPrevChapter();
+                            }
+                        }
+                    }, 50);
+                }
+            }
+        } else {
+            // Not a vertical pull, clear the timer
+            if (pullDirection) {
+                clearPullTimer();
+            }
+        }
     };
 
     const handleTouchEnd = () => {
         if (!isSwiping.current) return;
         isSwiping.current = false;
 
+        // Clear pull timer if not completed
+        clearPullTimer();
+
         const swipeThreshold = 50;
         const diffX = touchStartX.current - touchEndX.current;
         const diffY = touchStartY.current - touchEndY.current;
 
-        // Only process if there was actual movement
-        if (Math.abs(diffX) < 10 && Math.abs(diffY) < 10) {
-            return; // This was a tap, not a swipe
-        }
-
-        // Determine if swipe is more horizontal or vertical
-        const isHorizontalSwipe = Math.abs(diffX) > Math.abs(diffY);
-
-        if (isHorizontalSwipe && Math.abs(diffX) > swipeThreshold) {
-            // Horizontal swipe - switch tabs
+        // Only process horizontal swipes for tabs
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > swipeThreshold) {
             const currentIndex = TAB_ORDER.indexOf(activeTab);
 
             if (diffX > 0) {
                 // Swiped left - go to next tab
                 const nextIndex = (currentIndex + 1) % TAB_ORDER.length;
-                setActiveTab(TAB_ORDER[nextIndex]);
+                setTabTransition('slide-left');
+                setTimeout(() => {
+                    setActiveTab(TAB_ORDER[nextIndex]);
+                    setTabTransition('none');
+                }, 150);
             } else {
                 // Swiped right - go to previous tab
                 const prevIndex = (currentIndex - 1 + TAB_ORDER.length) % TAB_ORDER.length;
-                setActiveTab(TAB_ORDER[prevIndex]);
-            }
-        } else if (!isHorizontalSwipe && Math.abs(diffY) > swipeThreshold) {
-            // Vertical swipe - switch chapters
-            if (diffY > 0 && hasNextChapter && onNextChapter) {
-                // Swiped up - go to next chapter
-                onNextChapter();
-            } else if (diffY < 0 && hasPrevChapter && onPrevChapter) {
-                // Swiped down - go to previous chapter
-                onPrevChapter();
+                setTabTransition('slide-right');
+                setTimeout(() => {
+                    setActiveTab(TAB_ORDER[prevIndex]);
+                    setTabTransition('none');
+                }, 150);
             }
         }
     };
+
+    // Cleanup timer on unmount
+    useEffect(() => {
+        return () => {
+            if (pullTimerRef.current) {
+                clearInterval(pullTimerRef.current);
+            }
+        };
+    }, []);
 
     // Close on escape key
     useEffect(() => {
@@ -129,6 +190,20 @@ export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, h
                     onTouchMove={handleTouchMove}
                     onTouchEnd={handleTouchEnd}
                 >
+                    {/* Pull Progress Indicator */}
+                    {pullDirection && (
+                        <div className={`pull-indicator pull-indicator--${pullDirection}`}>
+                            <div className="pull-indicator__bar">
+                                <div
+                                    className="pull-indicator__progress"
+                                    style={{ width: `${pullProgress}%` }}
+                                />
+                            </div>
+                            <span className="pull-indicator__text">
+                                {pullDirection === 'up' ? '↑ Next Chapter' : '↓ Previous Chapter'}
+                            </span>
+                        </div>
+                    )}
                     {/* Tab Navigation */}
                     <nav className="content-tabs">
                         <button
@@ -158,7 +233,7 @@ export function ChapterModal({ chapter, onClose, onPrevChapter, onNextChapter, h
                     </nav>
 
                     {/* Tab Content */}
-                    <div className="tab-content">
+                    <div className={`tab-content tab-content--${tabTransition}`}>
                         {activeTab === 'insights' && (
                             <div className="insights-grid bengali-text">
                                 {chapter.coreInsights.map((insight, idx) => (
