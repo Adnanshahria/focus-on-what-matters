@@ -269,18 +269,84 @@
   opacity: 1;
 }
 
-.chapter-card.expanded {
-  grid-column: 1 / -1;
-  cursor: default;
-  border-color: rgba(16, 185, 129, 0.4);
-  /* Subtle Emerald */
-  box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
-  /* Soft Emerald Glow */
+/* ================================
+   CHAPTER MODAL
+   ================================ */
+
+.chapter-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  animation: fadeIn 0.2s ease;
 }
 
-.chapter-card.expanded::before {
-  opacity: 1;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-primary-dark));
+.chapter-modal {
+  width: 100%;
+  max-width: 900px;
+  max-height: 90vh;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-xl);
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  animation: slideUp 0.3s ease;
+  overflow: hidden;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal-header {
+  padding: var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+  background: var(--bg-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+
+.modal-chapter-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-2);
+}
+
+.modal-content {
+  padding: var(--space-6);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Override close button for modal */
+.modal-header .close-btn {
+  background: var(--bg-primary);
+}
+
+.modal-header .close-btn:hover {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 .chapter-header {

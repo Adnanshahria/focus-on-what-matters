@@ -1,18 +1,18 @@
 import { useState, useRef, useEffect } from 'react';
-import { Layout, ChapterCard } from './components';
+import { Layout, ChapterCard, ChapterModal } from './components';
 import { chapters, sections } from './data/chapters';
 import './App.css';
 
 function App() {
-  const [expandedChapterId, setExpandedChapterId] = useState<number | null>(null);
+  const [selectedChapterId, setSelectedChapterId] = useState<number | null>(null);
   const chapterRefs = useRef<Map<number, HTMLDivElement>>(new Map());
 
-  const handleChapterToggle = (chapterId: number) => {
-    setExpandedChapterId(prev => prev === chapterId ? null : chapterId);
+  const handleChapterSelect = (chapterId: number) => {
+    setSelectedChapterId(chapterId);
   };
 
   const handleSearchSelect = (chapterId: number) => {
-    setExpandedChapterId(chapterId);
+    setSelectedChapterId(chapterId);
     // Scroll to chapter
     setTimeout(() => {
       const element = chapterRefs.current.get(chapterId);
@@ -22,16 +22,18 @@ function App() {
     }, 100);
   };
 
-  // Close expanded chapter on escape key
+  // Close modal on escape key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape' && expandedChapterId !== null) {
-        setExpandedChapterId(null);
+      if (e.key === 'Escape' && selectedChapterId !== null) {
+        setSelectedChapterId(null);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [expandedChapterId]);
+  }, [selectedChapterId]);
+
+  const selectedChapter = selectedChapterId ? chapters.find(c => c.id === selectedChapterId) : null;
 
   return (
     <Layout onSearch={handleSearchSelect}>
@@ -95,8 +97,7 @@ function App() {
                 >
                   <ChapterCard
                     chapter={chapter}
-                    isExpanded={expandedChapterId === chapter.id}
-                    onToggle={() => handleChapterToggle(chapter.id)}
+                    onClick={() => handleChapterSelect(chapter.id)}
                   />
                 </div>
               ))
@@ -104,6 +105,14 @@ function App() {
           </div>
         </section>
       ))}
+
+      {/* Chapter Modal */}
+      {selectedChapter && (
+        <ChapterModal
+          chapter={selectedChapter}
+          onClose={() => setSelectedChapterId(null)}
+        />
+      )}
 
       {/* Coming Soon Message */}
       {chapters.length < 83 && (
