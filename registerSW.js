@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/focus-on-what-matters/sw.js', { scope: '/focus-on-what-matters/' })})}
