@@ -292,16 +292,16 @@
 .chapter-modal {
   width: 100%;
   max-width: 900px;
-  max-height: 90vh;
+  height: 85vh;
+  /* Fixed height */
+  max-height: 800px;
   background: var(--bg-primary);
-  border: 1px solid var(--border-default);
-  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
   display: flex;
   flex-direction: column;
-  box-shadow: var(--shadow-lg);
-  position: relative;
-  animation: slideUp 0.3s ease;
-  overflow: hidden;
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes slideUp {
@@ -324,6 +324,8 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: var(--space-4);
+  flex-shrink: 0;
+  /* Keep header fixed */
 }
 
 .modal-chapter-badge {
@@ -339,7 +341,9 @@
 .modal-content {
   padding: var(--space-6);
   overflow-y: auto;
-  overscroll-behavior: contain;
+  /* Enable scroll within content */
+  flex-grow: 1;
+  /* Take remaining space */
 }
 
 /* Override close button for modal */
@@ -583,13 +587,48 @@
   font-weight: 600;
 }
 
+
+/* ================================
+   GOLDEN QUOTES
+   ================================ */
+
+.golden-quotes-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.quote {
+  padding: var(--space-6);
+  background: var(--bg-tertiary);
+  border-left: 2px solid var(--accent-secondary);
+  border-radius: var(--radius-lg);
+  display: flex;
+  /* Flex context for author alignment */
+  flex-direction: column;
+}
+
+.quote-text {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--text-primary);
+  margin: 0;
+}
+
 .quote-author {
   margin-top: var(--space-3);
   font-size: 0.875rem;
   color: var(--accent-secondary);
   font-weight: 600;
   text-align: right;
-  display: block;
+  align-self: flex-end;
+  /* Align to right in flex column */
+  background: rgba(245, 158, 11, 0.15);
+  /* Gold highlighter background */
+  padding: 4px 12px;
+  border-radius: 4px;
+  /* Boxy shape */
 }
 
 /* ================================
@@ -797,14 +836,16 @@
   border-radius: var(--radius-sm);
   /* Boxy shape */
   border: 1px solid var(--border-subtle);
-  border-left: none;
-  /* Remove side border */
+  border-left-width: 4px;
+  /* Visible colored border */
 }
 
-.stats-card--emerald,
-.stats-card--gold,
-.stats-card--indigo {
-  border-left: none;
+.stats-card--emerald {
+  border-left-color: var(--accent-primary);
+}
+
+.stats-card--gold {
+  border-left-color: var(--accent-secondary);
 }
 
 .stats-card--indigo {
