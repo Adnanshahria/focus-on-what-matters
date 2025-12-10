@@ -1,5 +1,5 @@
 // Focus on What Matters - Complete Chapter Data
-// Generated: 2025-12-10T08:45:18.466Z
+// Generated: 2025-12-10T08:58:38.587Z
 // Chapters: 83 | Quotes: 180 | Insights: 358
 
 export interface Chapter {
@@ -57,8 +57,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "প্রতিদিন সকালে ঘুম থেকে ওঠার পর ৫ মিনিট সময় নিন নিজের মানসিক অবস্থা পর্যবেক্ষণ করার জন্য। যদি কোনো বাহ্যিক ঘটনা (যেমন ট্রাফিক বা খারাপ আবহাওয়া) আপনার মেজাজ খারাপ করে, তবে নিজেকে মনে করিয়ে দিন যে বাইরের ঘটনা নিয়ন্ত্রণ করা সম্ভব নয়, কিন্তু নিজের প্রতিক্রিয়া নিয়ন্ত্রণ করা সম্ভব। \"আমি শান্ত থাকব\"—এই মন্ত্রটি মনে মনে জপ করুন।",
     "criticalReflection": "The chapter posits that happiness is almost entirely an internal construct. While empowering, this perspective risks diminishing the impact of severe external stressors such as systemic poverty, trauma, or oppression. Sociologically, placing the burden of well-being solely on the individual's \"strong mind\" can lead to victim-blaming, ignoring the environmental factors that genuinely disrupt mental peace regardless of one's Stoic resolve.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Enhanced emotional regulation and a significant reduction in reactivity to daily annoyances.",
+      "social": "A calmer demeanor in social interactions, potentially reducing interpersonal conflicts, though it might also lead to passivity regarding social injustices if one becomes too detached from \"external\" problems."
     }
   },
   {
@@ -89,8 +89,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই খুব রাগ বা ভয় অনুভব করবেন, তাৎক্ষণিকভাবে কোনো প্রতিক্রিয়া দেখাবেন না। \"পজ বাটন\" চাপুন। নিজেকে প্রশ্ন করুন: \"আমি কি এখন আবেগের সুতোয় বাঁধা পুতুলের মতো আচরণ করছি?\" গভীরভাবে শ্বাস নিন এবং ভাবুন আপনার \"উচ্চতর সত্তা\" (Higher Self) এই পরিস্থিতিতে কী করত। তারপর ধীরস্থিরে কাজ করুন।",
     "criticalReflection": "Framing emotions as something that pulls us \"like a mere puppet\" creates a dichotomy between reason (good) and emotion (bad). Modern psychology suggests that emotions are vital signals, not just obstacles to be conquered. Suppressing emotions to achieve a \"divine\" state can lead to emotional blunting or alexithymia. Socially, this stoic suppression is often linked to toxic masculinity, where expressing vulnerability is seen as weakness.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Development of a \"pause mechanism\" between stimulus and response, leading to wiser decisions.",
+      "social": "Individuals become less volatile and more predictable, fostering stability in groups, though they may appear emotionally distant to loved ones seeking empathy."
     }
   },
   {
@@ -124,8 +124,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "একটি কাগজে দুটি কলাম তৈরি করুন। বাম পাশে লিখুন \"আমার নিয়ন্ত্রণে আছে\" (যেমন: আমার চেষ্টা, আমার সততা) এবং ডান পাশে লিখুন \"আমার নিয়ন্ত্রণে নেই\" (যেমন: অন্যের মতামত, আবহাওয়া, ট্রাফিক)। যখনই কোনো বিষয়ে চিন্তা হবে, দেখুন সেটি কোন কলামে পড়ে। ডান পাশের কলামের বিষয়গুলো নিয়ে ভাবা এখনই বন্ধ করুন।",
     "criticalReflection": "The advice to practice \"indifference\" toward national or international crises can foster political apathy. While excellent for personal tranquility, if applied collectively, it could erode civic engagement and social responsibility. A society where everyone focuses only on their immediate circle might fail to address systemic issues like climate change or inequality, which require collective concern about \"external\" matters.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Immediate reduction in anxiety levels and a sharp increase in productivity regarding personal goals.",
+      "social": "A potential decrease in civic activism, but an increase in stronger, more supportive immediate communities (family/friends)."
     }
   },
   {
@@ -157,8 +157,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যদি কোনো বন্ধু বা সহকর্মী ক্রমাগত নেতিবাচক কথা বলে, তবে \"Mental Shield\" বা মানসিক ঢাল কল্পনা করুন। তাদের কথা শুনুন, কিন্তু ভাবুন যে সেই কথাগুলো আপনার ঢালে ধাক্কা খেয়ে ফিরে যাচ্ছে। মনে মনে বলুন, \"আমি তোমার কষ্টে সমব্যথী, কিন্তু এই কষ্ট আমার নয়।\" আলোচনা শেষে দ্রুত নিজের পছন্দের কোনো কাজে মন দিন।",
     "criticalReflection": "The distinction between empathy and internalizing pain is clinically sound, yet the instruction to \"not feel responsible for how others feel\" can act as a barrier to deep intimacy. In close relationships (partners, parents), emotional regulation is often co-dependent. Strict adherence to this rule might make one appear cold or uncaring, potentially damaging trust in vulnerable moments where shared emotional burden is expected.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Preservation of emotional energy and prevention of \"empathy burnout.\"",
+      "social": "Healthier boundaries in toxic relationships, though potentially strained dynamics in relationships requiring deep emotional fusion."
     }
   },
   {
@@ -192,8 +192,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই অলসতা বা হতাশা অনুভব করবেন, সোশ্যাল মিডিয়া স্ক্রল না করে একটি বই হাতে নিন। কোনো নির্দিষ্ট লক্ষ্যের জন্য নয়, কেবল জানার আগ্রহ থেকে পড়ুন। আজই ঠিক করুন, আগামী এক সপ্তাহ প্রতিদিন অন্তত ১০ পৃষ্ঠা পড়বেন। নতুন কোনো দক্ষতা (যেমন কোডিং বা নতুন ভাষা) শেখার ছোট পদক্ষেপ নিন।",
     "criticalReflection": "This chapter intellectualizes motivation, assuming that \"knowledge\" is the universal cure for lethargy. For individuals suffering from clinical depression or burnout, simply \"grabbing a book\" is not feasible and might induce guilt. Furthermore, the fetishization of constant learning can lead to \"productive procrastination,\" where one consumes information to avoid taking real, possibly scary, actions in the real world.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A sharp mind, diverse skill set, and a reliable method to jumpstart momentum during stagnant periods.",
+      "social": "A more informed and intellectually curious society, though potentially one that values theory over practice if not balanced with execution."
     }
   },
   {
@@ -227,8 +227,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই দুশ্চিন্তা হবে, নিজেকে বলুন, \"এই দুশ্চিন্তা আমার সমস্যার সমাধান করবে না।\" নিজেকে প্রশ্ন করুন, \"সবচেয়ে খারাপ কী হতে পারে?\" এবং সেটার জন্য মানসিকভাবে প্রস্তুত হোন। এরপর ফলাফলের আশা ছেড়ে দিয়ে বর্তমান কাজের ওপর মনোযোগ দিন। মনে রাখুন, মানুষের অপছন্দ করার অধিকার আছে, এবং তাতে আপনার কিছু যায় আসে না।",
     "criticalReflection": "The advice to \"choose not to be anxious\" risks oversimplifying anxiety disorders. While cognitive reframing is a valid therapy tool (CBT), telling someone with an anxiety disorder to simply choose peace can be dismissive. Moreover, complete detachment from outcomes can sometimes result in a lack of ambition or drive, as anxiety about the future often fuels preparation and excellence.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Significant reduction in social anxiety and fear of failure; increased risk-taking ability.",
+      "social": "A culture that values authenticity over people-pleasing, though potentially leading to a workforce that is less driven by fear-based motivation (which corporations often rely on)."
     }
   },
   {
@@ -260,8 +260,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "কোনো প্রজেক্ট বা সম্পর্কের ক্ষেত্রে নিজেকে বলুন, \"আমি আমার সেরাটা দেব, কিন্তু ফলাফল আমার হাতে নেই।\" যদি কেউ আপনার সাথে খারাপ ব্যবহার করে, তবে অবাক না হয়ে ভাবুন এটিই তাদের স্বভাব হতে পারে। একে ব্যক্তিগতভাবে নেবেন না।",
     "criticalReflection": "While effective for personal resilience, extreme detachment from expectations in relationships can be perceived as emotional unavailability. Sociologically, if everyone adopts \"zero expectations\" from others, it might erode social accountability and the mutual standards necessary for a functional community.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Immunity to daily letdowns and rejection.",
+      "social": "More stable but potentially detached interpersonal relationships."
     }
   },
   {
@@ -294,8 +294,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ থেকে \"I hope\" (আমি আশা করি) কথাটি \"I wonder\" (দেখা যাক কী হয়) দিয়ে রিপ্লেস করুন। যেমন: \"আশা করি আমি চাকরিটা পাব\" না বলে বলুন, \"দেখা যাক ইন্টারভিউয়ের পর কী সুযোগ আসে।\" এটি মনকে ফলাফলের চাপ থেকে মুক্ত করে।",
     "criticalReflection": "\"Cease to hope\" is a controversial Stoic stance. Hope is often the primary motivator for social change and survival in oppressed communities. Critically, removing hope might cure fear but could also cure ambition and the drive to improve societal conditions. It risks promoting passivity in the face of solvable problems.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Immediate relief from performance anxiety and future-based stress.",
+      "social": "A calmer population, but perhaps one less driven to aggressively advocate for change."
     }
   },
   {
@@ -328,8 +328,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনি যদি কোনো বোকামি করে ফেলেন (যেমন কফিতে চিনি বেশি দেওয়া বা কোনো ফাইল ডিলিট করা), তবে নিজেকে গালি না দিয়ে হাসুন। নিজেকে বলুন, \"বাহ! আমি তো একটা কার্টুন ক্যারেক্টার।\" নিজের ভুল নিয়ে নিজে হাসতে পারা একটি বিশাল শক্তি।",
     "criticalReflection": "While self-compassion is vital, there is a risk of trivializing genuine errors that require accountability. If one laughs off every mistake without corrective analysis, it can lead to repeated incompetence. A balance between self-forgiveness and self-improvement is necessary to avoid stagnation.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Lower blood pressure, better sleep, and higher resilience to failure.",
+      "social": "A less aggressive and more forgiving social environment."
     }
   },
   {
@@ -360,8 +360,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "একটি \"Worry List\" তৈরি করুন। সেখানে আপনার সব চিন্তার তালিকা করুন। এরপর লাল কালি দিয়ে কেটে দিন যেগুলো আপনার নিয়ন্ত্রণে নেই। যা বাকি থাকল, কেবল সেগুলো নিয়েই আজকের দিন শুরু করুন।",
     "criticalReflection": "This foundational Stoic dichotomy is logically sound but psychologically demanding. Cognitive biases often blur the line between what is controllable and what is not (e.g., believing we can control others' opinions). Mastering this requires combating evolutionary instincts to control one's environment.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Extreme mental clarity and efficiency.",
+      "social": "Individuals become less prone to mass hysteria or collective panic."
     }
   },
   {
@@ -394,8 +394,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যদি মনে হয় \"এই শহর বা এই চাকরি ছেড়ে দিলেই আমি ভালো থাকব,\" তবে থামুন। নিজেকে প্রশ্ন করুন: \"আমি কি পালিয়ে যাচ্ছি?\" বর্তমান রুমেই ৫ মিনিট চোখ বন্ধ করে বসুন এবং ভাবুন এই মুহূর্তেই কীভাবে শান্তি খুঁজে পাওয়া যায়। আপনার বর্তমান পরিবেশের ৩টি ভালো দিক খুঁজে বের করুন।",
     "criticalReflection": "This advice is potent for existential ennui but dangerous if applied to toxic or abusive environments. Sometimes, changing surroundings is the only solution (e.g., leaving a war zone or abusive home). Privileged Stoicism often overlooks that environment dictates mental health for the marginalized.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Reduced impulse to flee problems; money saved on \"escapist\" travel.",
+      "social": "Greater community stability as people try to improve their current locale rather than leaving."
     }
   },
   {
@@ -427,8 +427,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "দিনের যেকোনো সময় দৈবচয়ন ভিত্তিতে (Randomly) নিজেকে থামান এবং প্রশ্ন করুন: \"আমার মন এখন কোথায়?\" যদি দেখেন মন অতীতে বা ভবিষ্যতে ঘুরে বেড়াচ্ছে, তবে আলতো করে তাকে বর্তমানে ফিরিয়ে আনুন। দিনে একবার অন্তত ১০ মিনিট চিন্তাভাবনা লিখুন।",
     "criticalReflection": "Constant self-observation can lead to \"hyper-reflexivity,\" a state often associated with anxiety where one becomes too conscious of their own thoughts to act naturally. While valuable, it needs to be balanced with \"flow states\" where self-consciousness disappears.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Increased mindfulness and metacognition (thinking about thinking).",
+      "social": "Reduced reactive behavior in conversations."
     }
   },
   {
@@ -461,8 +461,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার ফোনের \"News Feed\" বা সোশ্যাল মিডিয়া অ্যাপগুলো আনফলো বা মিউট করুন যা আপনাকে রাগ বা হিংসা অনুভব করায়। দিনে অন্তত ১ ঘণ্টা \"Zero Input\" সময় রাখুন—কোনো ফোন, বই বা টিভি নয়, কেবল নিজের চিন্তার সাথে থাকুন।",
     "criticalReflection": "Strictly guarding the mind against \"unpleasant\" information can create an echo chamber. Avoiding news because it causes anxiety might mean ignoring real-world injustices that require attention. A \"happy ignorance\" is not always a virtue in a democracy requiring informed citizens.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Sharper focus, better mood regulation, and original thinking.",
+      "social": "Potential disengagement from collective social issues or trends."
     }
   },
   {
@@ -495,8 +495,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "কোনো কাজ করার আগে নিজেকে প্রশ্ন করুন: \"কেন আমি এটি করছি? এটি কি আমার মূল লক্ষ্যের সাথে যায়?\" যদি উত্তর \"না\" হয়, তবে সেটি বাদ দিন। একটি সাইড প্রজেক্ট শুরু করুন (যেমন বাগান করা বা লেখালেখি) যা আপনাকে 'Flow State'-এ রাখে।",
     "criticalReflection": "The demand for \"no random actions\" sets an incredibly high bar for productivity. Human beings need leisure, aimless wandering, and \"pointless\" play for creativity and mental health. Demonizing distraction completely can lead to a robotic existence devoid of serendipity.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "High productivity and a sense of direction.",
+      "social": "Less participation in trivial social trends or viral distractions."
     }
   },
   {
@@ -529,8 +529,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আগামী ৩ মাসের জন্য কেবল একটি প্রধান লক্ষ্য ঠিক করুন। বাকি সব প্রজেক্ট 'হোল্ড'-এ রাখুন। প্রতিদিনের রুটিন এমনভাবে সাজান যেন আপনার দিনের সেরা সময়টা ওই একটি লক্ষ্যের পেছনে ব্যয় হয়। মাল্টি-টাস্কিং সম্পূর্ণ বন্ধ করুন।",
     "criticalReflection": "Single-minded focus is efficient but risky. If the chosen goal fails, the individual has no backup plan (diversification). Furthermore, obsessive focus can strain relationships and health if those are categorized as \"distractions\" during the pursuit of a goal.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Rapid mastery of skills and completion of major projects.",
+      "social": "Potential isolation during periods of intense focus."
     }
   },
   {
@@ -563,8 +563,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই কোনো অনাকাঙ্ক্ষিত ঘটনা ঘটবে, অভিযোগ না করে বলুন, \"আমার মন এর জন্য প্রস্তুত ছিল।\" নিজেকে ভিক্টিম না ভেবে পর্যবেক্ষক হিসেবে দেখুন। প্রতিদিন নিজের মানসিক অবস্থার \"Health Check\" করুন—আজ আমি কি অকারণে উদ্বিগ্ন ছিলাম?",
     "criticalReflection": "The metaphor of the eye accepting brightness ignores that too much brightness (trauma) binds the eye. Suggesting a healthy mind should never say \"too much\" risks invalidating trauma responses where the mind shuts down as a defense mechanism. It sets a standard of stoic invulnerability that is biologically unrealistic for many.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Robust mental stability and adaptability.",
+      "social": "Reliable and calm leaders in crisis situations."
     }
   },
   {
@@ -595,8 +595,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আয়নার সামনে দাঁড়িয়ে নিজেকে বলুন, \"আমি তোমাকে পছন্দ করি এবং আমি তোমার পাশে আছি।\" নিজেকে একজন প্রিয় বন্ধুর মতো পরামর্শ দিন। যখন কোনো ভুল করবেন, নিজেকে বকা না দিয়ে বন্ধুর মতো সান্ত্বনা দিন।",
     "criticalReflection": "This concept is universally positive. However, \"knowing oneself\" is often a privilege of those with time for introspection. For those in survival mode, self-analysis might seem like a luxury.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "High self-esteem and reduced self-sabotage.",
+      "social": "More authentic interactions, as people pretend less."
     }
   },
   {
@@ -629,8 +629,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার গত এক মাসের খরচের তালিকা দেখুন। কোন খরচগুলো কেবল \"Show off\" বা অন্যের চাপে করেছেন? সেগুলো চিহ্নিত করুন। নিজের স্বভাবের সাথে যায় না এমন একটি কাজ আজই তালিকা থেকে বাদ দিন।",
     "criticalReflection": "Acting strictly according to \"who you are\" assumes a fixed self. Psychology suggests personality is fluid. Rigidly adhering to labels (e.g., \"I am an introvert, so I won't socialize\") can hinder growth and experimentation.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "deep satisfaction and efficient use of resources (money/time).",
+      "social": "A society of diverse individuals pursuing unique paths rather than uniform trends."
     }
   },
   {
@@ -663,8 +663,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার জীবনের সবচেয়ে কঠিন ৩টি মুহূর্তের কথা লিখুন যা আপনি পার করে এসেছেন। নিজেকে মনে করিয়ে দিন, \"আমি যদি ওটা পার করতে পারি, তবে এটাও পারব।\" নিজের শক্তির ওপর আস্থা রাখুন।",
     "criticalReflection": "While empowering, telling trauma survivors they \"have the resources\" can sometimes minimize the need for external help (therapy, medication, financial aid). Resilience is not infinite, and systemic failures cannot always be overcome by inner strength alone.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Reduced panic during crises and increased self-confidence.",
+      "social": "A more resilient populace capable of bouncing back from collective trauma."
     }
   },
   {
@@ -697,8 +697,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই কোনো খারাপ ঘটনা ঘটবে, নিজেকে বলুন, \"এটি আমার গল্পের একটি 'Plot Twist' মাত্র, শেষ নয়।\" নিজেকে একজন যোদ্ধার ভূমিকায় কল্পনা করুন যে বাধা অতিক্রম করছে। নেতিবাচক ঘটনাকে \"চ্যালেঞ্জ\" হিসেবে রি-ফ্রেম (Reframe) করুন।",
     "criticalReflection": "The idea that \"you haven't been harmed if you don't feel harmed\" is powerful for insults but dangerous for physical or systemic harm. It can lead to denial of abuse or injustice. Narrative therapy is effective, but it must acknowledge objective reality alongside subjective interpretation.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A strong sense of agency and overcoming the \"victim mentality.\"",
+      "social": "Empowerment of individuals to change their circumstances through mindset shifts."
     }
   },
   {
@@ -731,8 +731,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আগামী ১ সপ্তাহ \"No-Buy\" চ্যালেঞ্জ নিন। নিত্যপ্রয়োজনীয় খাবার ও ওষুধ ছাড়া আর কিচ্ছু কিনবেন না। যখনই কোনো শপিং অ্যাপে ঢুকতে ইচ্ছে করবে, নিজেকে বলুন: \"আমি আমার জিনিসের চেয়ে দামী।\" নিজের আলমারির দিকে তাকিয়ে ভাবুন, \"এগুলোর কোনোটিই আমি নই।\"",
     "criticalReflection": "While dissociating self-worth from possessions is mentally liberating, it can be interpreted as dismissive of the security that material wealth provides. For those struggling to meet basic needs, \"possessions\" aren't vanity metrics but survival tools. The philosophy works best when one has already reached a baseline of financial stability.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Reduction in impulse buying and financial anxiety.",
+      "social": "A shift away from status-driven competition towards character-driven interactions."
     }
   },
   {
@@ -764,8 +764,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "নিজের ৩টি মূল নীতি (Core Values) লিখুন (যেমন: সততা, সময়ানুবর্তিতা, পরোপকার)। আগামী এক মাসে এমন কোনো পরিস্থিতির মুখোমুখি হলে যেখানে এই নীতি ভাঙার চাপ আসবে (যেমন বন্ধুদের আড্ডায় গসিপ করা), তখন সাহসের সাথে \"না\" বলুন অথবা সেখান থেকে সরে আসুন।",
     "criticalReflection": "Rigid adherence to values in all situations can sometimes lead to social friction or intolerance. Being \"the same person\" always might not account for the adaptability needed in complex social nuances (e.g., diplomacy vs. brutal honesty).",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Increased self-respect and a clear conscience.",
+      "social": "Respect from others for being reliable, though potentially fewer \"casual\" friends."
     }
   },
   {
@@ -792,8 +792,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যেকোনো বড় সিদ্ধান্ত নেওয়ার আগে একটি ছক আঁকুন। একপাশে লিখুন \"আমার করণীয়\" (যেমন: পরিশ্রম, প্রস্তুতি), অন্যপাশে লিখুন \"ভাগ্যের হাতে\" (যেমন: ফলাফল, অন্যের প্রতিক্রিয়া)। ফোকাস কেবল প্রথম অংশে রাখুন।",
     "criticalReflection": "Entrusting things to \"the universe\" can sometimes encourage passivity or fatalism. It is crucial to distinguish between accepting an outcome after doing one's best versus using fate as an excuse for lack of preparation.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Reduced \"Analysis Paralysis\" or hesitation.",
+      "social": "More decisive leadership in group settings."
     }
   },
   {
@@ -825,8 +825,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার জীবনের এমন একটি সিদ্ধান্তের কথা ভাবুন যা আপনি অন্যের ভয়ে নিচ্ছেন না (যেমন: নতুন ক্যারিয়ার, বিয়ে বা বিদেশ যাত্রা)। আজই সেই বিষয়ে ছোট একটি পদক্ষেপ নিন এবং কাউকে কৈফিয়ত দেবেন না। মনে মনে বলুন, \"এটি আমার জীবন, আমার সিদ্ধান্ত।\"",
     "criticalReflection": "While autonomy is key, completely ignoring \"what people say\" can be dangerous if it turns into arrogance. Constructive criticism from mentors or experts is vital for growth. The challenge is filtering noise from wisdom.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Empowerment and ownership of one's life path.",
+      "social": "Others stop offering unsolicited advice once they see your resolve."
     }
   },
   {
@@ -859,8 +859,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যদি হঠাৎ কোনো পরিকল্পনা বাতিল হয় (বৃষ্টিতে পিকনিক বাতিল বা মিটিং ক্যানসেল), তবে ১ মিনিটের বেশি মন খারাপ করবেন না। তৎক্ষণাৎ \"Plan B\" তৈরি করুন। বলুন, \"যা হয়েছে ভালোর জন্যই হয়েছে, এখন আমি এই সময়টা অন্য কাজে লাগাব।\"",
     "criticalReflection": "Viewing everything as \"borrowed\" is a profound coping mechanism for loss, but it might prevent deep emotional investment. If one constantly prepares to \"give up everything,\" they may live with underlying anxiety or detachment, fearing attachment itself.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "High adaptability quotient (AQ) and resilience in chaos.",
+      "social": "Reduced drama and complaining during collective disruptions (e.g., pandemics)."
     }
   },
   {
@@ -892,8 +892,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ সারাদিনে যা কিছু \"ভুল\" হবে (কফি পড়ে যাওয়া, ইন্টারনেট স্লো হওয়া), তার প্রতিটিতে হাসিমুখে বলুন, \"আমি ঠিক এটাই চেয়েছিলাম!\" এটি প্রথমে হাস্যকর মনে হলেও মস্তিষ্ককে নেতিবাচকতা থেকে মুক্তি দেয়।",
     "criticalReflection": "\"Welcoming whatever happens\" can be dangerous advice for victims of injustice or abuse. While valid for unavoidable fate (death, weather), applying it to solvable oppression (discrimination, bad bosses) suggests passivity rather than necessary resistance.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A \"Teflon mind\" where frustrations slide off easily.",
+      "social": "A person who brings calm rather than chaos to stressful situations."
     }
   },
   {
@@ -925,8 +925,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "সকালে ৫ মিনিট চোখ বন্ধ করে ভাবুন—আজ আপনার চাকরি চলে গেলে বা ফোন হারিয়ে গেলে আপনি কী করবেন? এই কল্পনার পর বাস্তবে ফিরে আসুন এবং বর্তমান নিরাপত্তার জন্য কৃতজ্ঞতা প্রকাশ করুন। এই প্রস্তুতি আপনাকে বিপদে প্যানিক করা থেকে বাঁচাবে।",
     "criticalReflection": "While this builds resilience, for individuals with anxiety disorders, \"visualizing disasters\" can trigger panic attacks rather than preparation. It requires a stable baseline mental health to practice effectively without spiraling into catastrophizing.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Anti-fragility; shocks do not break you but make you react smarter.",
+      "social": "People become better crisis managers and insurance planners."
     }
   },
   {
@@ -951,8 +951,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "নিজেকে প্রশ্ন করুন: \"যদি আজই আমার জীবনের শেষ দিন হয়, তবে আমি কি এই কাজটিই করতাম যা এখন করছি?\" যদি উত্তর \"না\" হয়, তবে সন্ধ্যায় অন্তত এমন কিছু করুন যা আপনাকে জীবিত অনুভব করায়।",
     "criticalReflection": "This chapter critiques the \"deferred life plan\" (working hard now to enjoy later). While philosophically sound, economic reality often demands sacrificing the present for future security (e.g., saving for retirement). A balance is needed.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Increased urgency to pursue passions.",
+      "social": "A shift from \"hustle culture\" to \"living culture.\""
     }
   },
   {
@@ -985,8 +985,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "দিনের শেষে ডায়েরিতে লিখুন: \"আজ আমি এমন কী করেছি যা আমার জীবনকে অর্থবহ করেছে?\" যদি উত্তর শূন্য হয়, তবে আগামীকালের রুটিনে পরিবর্তন আনুন। সময়কে টাকার মতো হিসাব করে খরচ করুন।",
     "criticalReflection": "Seneca’s advice works well for those with autonomy over their time. For gig workers or those in survival jobs, optimizing the \"quality\" of time is a privilege. The pressure to \"live meaningfully\" every day can also become a new source of stress.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Less procrastination and reduced \"doom-scrolling.\"",
+      "social": "People spending more quality time with family rather than working overtime unnecessarily."
     }
   },
   {
@@ -1018,8 +1018,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "বিনোদনের জন্য নেটফ্লিক্স না দেখে ইউটিউবে কোনো শিক্ষামূলক ডকুমেন্টারি বা টেড টক (TED Talk) দেখুন। সপ্তাহে একটি নতুন বিষয় সম্পর্কে জানুন (যেমন মহাকাশ, ইতিহাস বা মনোবিজ্ঞান)। শেখার আনন্দকে অভ্যাসে পরিণত করুন।",
     "criticalReflection": "Defining happiness only through wisdom can be exclusionary. Many find profound happiness in simple, non-intellectual acts like gardening, caregiving, or physical labor. The intellectualization of happiness is a specific, somewhat elitist, Stoic trait.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A more engaged and curious mind; less boredom.",
+      "social": "A more educated citizenry capable of critical thought."
     }
   },
   {
@@ -1052,8 +1052,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "প্রতিদিন অন্তত একটি কাজ করুন যা করতে আপনার কষ্ট হয় কিন্তু শরীরের জন্য ভালো (যেমন: ঠান্ডা পানিতে গোসল, ৩০ মিনিট দৌড়ানো বা কঠিন কোনো বই পড়া)। কষ্টের মধ্য দিয়ে নিজের ইচ্ছাশক্তিকে ঝালিয়ে নিন।",
     "criticalReflection": "The cult of \"doing hard things\" creates resilience but can also glorify suffering. Sometimes, the easiest path is the smartest (efficiency). Constant struggle is not always a virtue; strategic ease is also a skill.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Improved physical health and mental discipline.",
+      "social": "A culture that respects grit and perseverance."
     }
   },
   {
@@ -1085,8 +1085,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার ঘর থেকে এমন ৫টি জিনিস আজই ফেলে দিন বা দান করুন যা গত ৬ মাসে ব্যবহার করেননি। নিজেকে বলুন, \"এই জিনিসগুলো আমাকে সংজ্ঞায়িত করে না।\" এটি আপনাকে মুক্তির স্বাদ দেবে।",
     "criticalReflection": "\"You don't own anything\" is spiritually liberating but legally and practically complicated. In a capitalist society, ownership is security (e.g., owning a home vs. renting). This philosophy works best as a mental detachment rather than a literal financial strategy for everyone.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Reduced hoarding and cleaner living spaces.",
+      "social": "Less consumer waste and more charitable giving."
     }
   },
   {
@@ -1118,8 +1118,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ রাতে ১০ মিনিট সময় নিয়ে ভাবুন—আপনার বর্তমান চাকরি বা পড়াশোনা কি আপনার নিজের চয়েস, নাকি পরিস্থিতির শিকার? যদি পরিস্থিতির শিকার হন, তবে ছোট ছোট পদক্ষেপ নিতে শুরু করুন যা আপনাকে আপনার ইচ্ছের পথে নিয়ে যাবে।",
     "criticalReflection": "The idea that life shouldn't be an accident ignores the massive role of luck and randomness. Many successful lives are happy accidents. Over-planning or demanding intentionality in every step can lead to rigidity and an inability to seize unexpected opportunities.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A aligned life trajectory with fewer mid-life crises.",
+      "social": "More people pursuing fulfilling careers, potentially leading to higher societal productivity."
     }
   },
   {
@@ -1152,8 +1152,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার বাকেট লিস্টের (Bucket List) এমন একটি কাজ বেছে নিন যা আপনি \"পরে করবেন\" বলে রেখে দিয়েছেন। সেই কাজটি করার জন্য আজকেই কোনো পদক্ষেপ নিন (যেমন টিকিট কাটা বা ক্লাস বুক করা)। ভাবুন, \"আর সময় নেই।\"",
     "criticalReflection": "Living with a constant sense of urgency (\"short time left\") can lead to chronic stress or hedonism. A balanced view acknowledges mortality without inducing panic, allowing for long-term projects like raising children or building institutions which require patience, not haste.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Elimination of procrastination.",
+      "social": "A more vibrant culture where people act on their dreams."
     }
   },
   {
@@ -1184,8 +1184,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "\"১% রুল\" মেনে চলুন। প্রতিদিন নিজেকে গতকালের চেয়ে মাত্র ১% উন্নত করার চেষ্টা করুন। সেটা হতে পারে ১০ মিনিট বেশি পড়া বা ৫ মিনিট বেশি হাঁটা। ১ বছরে এই ছোট পরিবর্তন বিশাল আকার ধারণ করবে।",
     "criticalReflection": "The obsession with constant \"betterment\" characterizes modern self-help culture. It implies we are never \"enough\" as we are. Sometimes, acceptance of one's current state is healthier than the neurotic pursuit of endless optimization.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Compounding growth in skills and character.",
+      "social": "A society focused on merit and hard work rather than entitlement."
     }
   },
   {
@@ -1217,8 +1217,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "সপ্তাহে একদিন ইচ্ছাকৃতভাবে কোনো একটি আরাম ত্যাগ করুন (Voluntary Discomfort)। হতে পারে ফ্যানের স্পিড কমিয়ে ঘুমানো, প্রিয় খাবার না খাওয়া বা লিফট ব্যবহার না করে সিঁড়ি দিয়ে ওঠা। এটি আপনার মস্তিষ্ককে কঠিন পরিস্থিতির জন্য প্রস্তুত করবে।",
     "criticalReflection": "While \"voluntary discomfort\" builds resilience, it originates from a position of privilege. For those already living in poverty or chronic pain, life itself is the training. The Stoic emphasis on physical asceticism can sometimes border on self-punishment if not balanced with self-care.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Increased pain tolerance and reduced dependency on luxury.",
+      "social": "A less consumerist lifestyle."
     }
   },
   {
@@ -1250,8 +1250,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ আপনার ঘরের দিকে তাকান এবং ৩টি জিনিস চিহ্নিত করুন যা গত ৬ মাসে ব্যবহার করেননি। সেগুলোকে স্টোরে রেখে দিন বা দান করুন। নিজেকে প্রমাণ করুন যে এগুলো ছাড়াই আপনি দিব্যি চলতে পারেন।",
     "criticalReflection": "Resourcefulness is a virtue, but systemic scarcity is a societal failure. While individual adaptability is good, glorifying \"making do with less\" should not become an excuse to ignore economic inequalities that force people to be resourceful out of desperation, not choice.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Reduced anxiety about financial loss.",
+      "social": "Lower environmental footprint due to reduced consumption."
     }
   },
   {
@@ -1283,8 +1283,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "গত মাসে আপনি কী কী ভুল করেছেন তার একটি তালিকা করুন। নিজেকে বিচার না করে (Non-judgmentally) প্রতিটি ভুলের পাশে লিখুন—\"এখান থেকে আমি কী শিখলাম?\" এবং \"আগামীবার আমি কী ভিন্নভাবে করব?\"",
     "criticalReflection": "The phrase \"persist in mistake is diabolical\" adds heavy moral weight to repetitive errors. In reality, breaking habits (like bad posture or addiction) involves relapse. A gentler approach than viewing recurrence as \"diabolical\" might be more effective for behavioral change.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Faster learning curve and reduced guilt over failures.",
+      "social": "A culture of accountability rather than blame."
     }
   },
   {
@@ -1316,8 +1316,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই মনে মনে বলবেন \"আমি পারব না\" বা \"এটা খুব কঠিন\", তখন বাক্যটি রি-ফ্রেজ (Rephrase) করুন। বলুন, \"এটা কঠিন, কিন্তু আমি এর সমাধান বের করতে পারব।\" নিজের নাম ধরে নিজেকে উৎসাহিত করুন (যেমন: \"শোন",
     "criticalReflection": "While positive self-talk is powerful (CBT principle), it has limits. Severe chronic illnesses or mental health disorders often require medical intervention, not just \"better self-talk.\" Over-reliance on mindset to cure physical ailments can lead to neglecting necessary medical care.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Improved pain management and mental endurance.",
+      "social": "Less complaining in social interactions."
     }
   },
   {
@@ -1349,8 +1349,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "গত এক সপ্তাহে আপনি যা নতুন শিখেছেন (বই বা ভিডিও থেকে), তার ওপর ভিত্তি করে আজই একটি অ্যাকশন নিন। যদি স্বাস্থ্যের টিপস দেখে থাকেন, তবে আজই একটি স্বাস্থ্যকর মিল খান। \"Learning\" কে \"Doing\"-এ রূপান্তর করুন।",
     "criticalReflection": "The \"athlete mindset\" creates a performance-based view of life. Not everyone wants to \"perform\" constantly; some seek contentment or stillness. Constant execution can lead to a utilitarian life where knowledge is only valued if it's useful, neglecting art or philosophy for pleasure's sake.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "High competency and skill acquisition.",
+      "social": "A pragmatic society that values results over credentials."
     }
   },
   {
@@ -1382,8 +1382,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "দিনের শুরুতে ঠিক করুন আজ কোন একটি নির্দিষ্ট বিষয়ে আপনি গতকালের চেয়ে ভালো করবেন। দিন শেষে নিজেকে প্রশ্ন করুন: \"আজ আমি এমন কী শিখেছি বা করেছি যা আমাকে মানসিকভাবে শক্তিশালী করেছে?\"",
     "criticalReflection": "Seneca's advice to fortify against poverty is ironic coming from one of Rome's richest men. While mental strength helps endure poverty, it doesn't solve it. Structural barriers to becoming \"stronger\" (like lack of education access) are ignored in this individualistic framework.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Decreased dependency on external validation (likes/views).",
+      "social": "More resilient individuals who are harder to manipulate."
     }
   },
   {
@@ -1415,8 +1415,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যদি অতীতে কোনো ভুল সিদ্ধান্ত নিয়ে থাকেন, তবে আজ নিজেকে একটি চিঠি লিখুন। লিখুন: \"আমি তোমাকে ক্ষমা করলাম, কারণ সেই সময় তোমার কাছে যে বুদ্ধি ছিল, তা দিয়ে তুমি সেরাটাই করার চেষ্টা করেছ।\"",
     "criticalReflection": "\"Blaming yourself for negative feelings is progress\" (Epictetus) is a complex Stoic idea meaning you are the source of your distress (judgments), not the event. However, misinterpreted, it can lead to gaslighting oneself—believing valid reactions to abuse or trauma are just \"my fault for feeling bad.\"",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Healing from past regrets and reduced self-loathing.",
+      "social": "More forgiving interactions with others as a reflection of self-forgiveness."
     }
   },
   {
@@ -1448,8 +1448,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার সার্কেলে এমন কাউকে চিহ্নিত করুন যে সবসময় আপনার উৎসাহ কমিয়ে দেয়। তার সাথে সময় কাটানো কমিয়ে দিন। পরিবর্তে এমন কারো সাথে মিশুন যে আপনার চেয়ে এক ধাপ এগিয়ে আছে।",
     "criticalReflection": "Attributing lost friendships solely to \"jealousy\" or \"growth\" can be a defense mechanism to avoid examining one's own arrogance or neglect of friends. Sometimes people drift apart simply due to different priorities, not malice.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A curated social circle of high-value individuals.",
+      "social": "Social stratification where \"growth-minded\" people isolate from others."
     }
   },
   {
@@ -1481,8 +1481,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "পরবর্তীবার যখন ট্রাফিক জ্যামে পড়বেন বা ইন্টারনেট স্লো হবে, তখন বিরক্ত না হয়ে একে \"ধৈর্য পরীক্ষার সুযোগ\" হিসেবে দেখুন। মনে মনে বলুন, \"এটি আমাকে মানসিকভাবে শক্ত করছে।\"",
     "criticalReflection": "This chapter romanticizes hardship. For people whose entire life is an \"annoying thing\" due to poverty or disability, adding more discomfort is not training—it's torture. This Stoic exercise is primarily beneficial for the comfortable middle/upper class.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "High tolerance for inconvenience and frustration.",
+      "social": "Less \"Karen-like\" behavior in public service situations."
     }
   },
   {
@@ -1626,8 +1626,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার বর্তমান কাজের পরিবেশ মূল্যায়ন করুন। সফল হওয়ার জন্য আপনাকে কি এমন কিছু করতে হচ্ছে যা আপনি ঘৃণা করেন (যেমন মিথ্যা বলা, তেল দেওয়া)? যদি হ্যাঁ হয়, তবে ভাবুন এই \"মূল্য\" আপনি দিতে প্রস্তুত কি না। প্রস্তুত না থাকলে এক্সিট প্ল্যান তৈরি করুন।",
     "criticalReflection": "Walking away from a \"game\" that compromises values is noble but requires financial privilege (savings/safety net). Many people must pay the price of toxic workplaces to feed their families. The Stoic advice here assumes a level of career mobility not everyone has.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Integrity-driven career choices.",
+      "social": "Potential loss of income in the short term, but long-term mental peace."
     }
   },
   {
@@ -1659,8 +1659,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "নিজেকে বলুন, \"আমার সুখ বাইরের কোনো ঘটনার ওপর নির্ভর করে না।\" যদি কাল লটারি জিতেন—ভালো; যদি না জিতেন—তাও ভালো। নিজের মেজাজকে বাইরের ঘটনার দাস হতে দেবেন না।",
     "criticalReflection": "The story of Rubin Carter is inspiring but represents an extreme outlier of mental fortitude (surviving wrong imprisonment). Using extreme examples can sometimes discourage ordinary people facing ordinary struggles, making them feel inadequate for not being superhumanly stoic.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Unshakeable inner peace regardless of external constraints.",
+      "social": "Individuals who are difficult to manipulate or oppress mentally."
     }
   },
   {
@@ -1693,8 +1693,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার \"পর্যাপ্ত\" (Enough) এর সংজ্ঞা ঠিক করুন। কত টাকা বা কী পদ পেলে আপনি থামবেন? সেই সীমারেখা না থাকলে আপনি আজীবন দৌড়াবেন। আজই ঠিক করুন, আপনার \"Enough Point\" কোনটি।",
     "criticalReflection": "\"Mo money, mo problems\" is a cliche often used by the wealthy to discourage the poor from seeking wealth. While wealth brings new problems, poverty brings survival problems. The stress of managing wealth is arguably preferable to the stress of starvation.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Better work-life balance and reduced burnout.",
+      "social": "A culture that values contentment over relentless growth."
     }
   },
   {
@@ -1726,8 +1726,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার বর্তমান লক্ষ্যগুলো রিভিউ করুন। সেগুলোকে \"ফলাফল\" থেকে \"কাজে\" রূপান্তর করুন।",
     "criticalReflection": "Focusing only on input (action) risks ignoring effectiveness. One can run every day (action) but with bad form and get injured. Goals need a feedback loop where outcomes are checked periodically to adjust the process, not just blind adherence to action.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Higher consistency and lower anxiety about failure.",
+      "social": "A more disciplined workforce."
     }
   },
   {
@@ -1759,8 +1759,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ সোশ্যাল মিডিয়ায় বা বাস্তবে পরিচিত কারো সাফল্যে (প্রমোশন, নতুন বাড়ি) মন থেকে অভিনন্দন জানান। হিংসা লাগলেও জোর করে ভালো কথা বলুন। এটি আপনার মস্তিষ্ককে \"Scarcity Mindset\" থেকে \"Abundance Mindset\"-এ শিফট করবে।",
     "criticalReflection": "While celebrating others is virtuous, systemic inequality often means some succeed due to privilege/corruption while others struggle. Blindly celebrating all success without questioning how it was achieved can normalize unfairness. However, on a personal level, envy remains toxic.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Better mental health and stronger networks.",
+      "social": "collaborative communities and reduced workplace toxicity."
     }
   },
   {
@@ -1841,8 +1841,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "টাকা উপার্জনের নতুন উপায় খুঁজুন, কিন্তু শর্ত হলো তা হতে হবে ১০০% সৎ পথে। যদি কোনো সুযোগ আসে যেখানে সামান্য অনৈতিকতা দরকার, তা প্রত্যাখ্যান করুন। নিজেকে বলুন, \"আমার চরিত্র আমার টাকার চেয়ে দামী।\"",
     "criticalReflection": "\"If you can make money remaining honest... do it.\" This is idealistic. In many corrupt economies, honest wealth accumulation is structurally impossible or extremely slow. The advice assumes a fair market which doesn't exist everywhere.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Guilt-free wealth and peace of mind.",
+      "social": "Reduced corruption and ethical business practices."
     }
   },
   {
@@ -1874,8 +1874,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "কোনো আর্থিক সুযোগ পেলে নিজেকে প্রশ্ন করুন: \"এই কাজটি করলে কি আমি রাতে শান্তিতে ঘুমাতে পারব?\" যদি উত্তর 'না' হয়, তবে যত টাকাই হোক না কেন, তা প্রত্যাখ্যান করুন। আপনার চরিত্রই আপনার সবচেয়ে বড় সম্পদ।",
     "criticalReflection": "While maintaining integrity is crucial, the stark choice between \"reputation\" and \"revenue\" can be a false dichotomy in survival situations. Systemic corruption sometimes forces individuals into ethical grey zones just to survive. The advice assumes a level of economic privilege where one can afford to say 'no' to compromised income.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A clear conscience and long-term trust capital.",
+      "social": "A reduction in fraud and unethical business practices."
     }
   },
   {
@@ -1907,8 +1907,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ রাতে ঘুমানোর আগে আপনার জীবনের ৩টি \"সাধারণ\" জিনিসের জন্য কৃতজ্ঞতা প্রকাশ করুন (যেমন: নিজের বিছানা, এক গ্লাস পরিষ্কার পানি, বা মায়ের ফোন কল)। নিজেকে বলুন, \"আমার জীবন যথেষ্ট সুন্দর।\"",
     "criticalReflection": "Celebrating a \"normal\" life is a healthy antidote to hustle culture, but it can also be used to justify mediocrity or lack of ambition. \"Normal\" is subjective; for some, it means safety, for others, stagnation. The challenge is finding contentment without losing the drive to improve.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Increased life satisfaction and reduced \"Fear Of Missing Out\" (FOMO).",
+      "social": "Less pressure on youth to become viral sensations or millionaires overnight."
     }
   },
   {
@@ -1940,8 +1940,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "মাসে একবার \"Poverty Simulation\" করুন। খুব সাধারণ খাবার খান, কোনো খরচ করবেন না। এটি আপনাকে বোঝাবে যে সুখের জন্য টাকার প্রয়োজন খুব কম। এতে অর্থ হারানোর ভয় কমে যাবে।",
     "criticalReflection": "\"Not having to worry about money\" is the definition of wealth, but achieving that state often requires a significant amount of money initially. The Stoic advice to detach from money is psychologically sound but practically difficult for those living paycheck to paycheck.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Financial freedom (psychological, not just numerical).",
+      "social": "A shift from conspicuous consumption to conscious living."
     }
   },
   {
@@ -1973,8 +1973,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "কাউকে কোনো উপদেশ দেওয়ার আগে ভাবুন, \"আমি কি এই উপদেশ নিজে পালন করি?\" যদি না করেন, তবে চুপ থাকুন। আজ থেকে \"আমি জানি\" বলার বদলে \"আমি করছি\" প্রমাণ করার চেষ্টা করুন।",
     "criticalReflection": "While leading by example is powerful, some situations require vocal advocacy and explicit instruction. Staying silent and hoping actions will inspire might be too passive in the face of urgent ignorance or injustice.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Authenticity and credibility as a leader.",
+      "social": "Reduced hypocrisy and more genuine mentorship."
     }
   },
   {
@@ -2055,8 +2055,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "পোমোডোরো (Pomodoro) টেকনিক ব্যবহার করুন। ২৫ মিনিট কাজ, ৫ মিনিট বিশ্রাম। ক্লান্ত হওয়ার জন্য অপেক্ষা করবেন না। এই ছোট ছোট বিশ্রাম আপনার এনার্জি লেভেল সারাদিন ধরে রাখবে।",
     "criticalReflection": "\"Rest before you are tired\" is excellent advice but difficult to implement in rigid corporate structures or gig economies where time is money. Also, finding pleasure in work is ideal, but for many in menial jobs, work is purely transactional, necessitating strict boundaries for rest.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Sustained high energy and prevention of chronic fatigue.",
+      "social": "A healthier workforce with fewer sick days."
     }
   },
   {
@@ -2088,8 +2088,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "নিজের বর্তমান পরিস্থিতির ৩টি সীমাবদ্ধতা লিখুন (যেমন: আর্থিক অবস্থা, বয়স বা পারিবারিক দায়িত্ব)। এগুলোকে \"সমস্যা\" হিসেবে না দেখে নাটকের \"স্ক্রিপ্ট\" হিসেবে দেখুন। বলুন, \"এই স্ক্রিপ্টেই আমি সেরা অভিনয় করে দেখাব।\"",
     "criticalReflection": "The metaphor of life as a play with a pre-written script encourages acceptance but risks discouraging social mobility. If everyone accepts their \"role\" (e.g., as a poor person), social progress stalls. It balances unhealthily towards determinism.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Peace with one's circumstances and reduction of envy.",
+      "social": "Potentially less class conflict, but also less drive for social equity."
     }
   },
   {
@@ -2121,8 +2121,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ এমন একটি ভালো কাজ করুন যা কেউ জানবে না। রাস্তা থেকে ময়লা সরানো বা গোপনে দান করা। এরপর কাউকে সেটা বলবেন না। এই গোপন ভালো কাজটি আপনার আত্মসম্মানবোধ বহুগুণ বাড়িয়ে দেবে।",
     "criticalReflection": "Being one's own witness is the ultimate form of integrity. However, without external accountability, self-deception can creep in. We are often biased judges of ourselves. A blend of internal standards and external feedback loops is ideal.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Unshakable self-confidence and moral grounding.",
+      "social": "A high-trust society where supervision costs are low."
     }
   },
   {
@@ -2154,8 +2154,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ সারাদিন বিশেষণ (Adjective) ব্যবহার কম করুন। \"বাজে আবহাওয়া\" না বলে বলুন \"বৃষ্টি হচ্ছে।\" \"বিরক্তিকর ট্রাফিক\" না বলে বলুন \"গাড়ি ধীরে চলছে।\" ঘটনাকে আবেগ থেকে আলাদা করে দেখার চেষ্টা করুন।",
     "criticalReflection": "Precision reduces conflict but can sometimes strip language of emotion and nuance. In intimate relationships, communicating feelings (which are subjective and imprecise) is often more important than communicating cold facts.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Clearer thinking and reduced interpersonal drama.",
+      "social": "More rational public discourse."
     }
   },
   {
@@ -2187,8 +2187,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার টু-ডু লিস্ট (To-Do List) থেকে নিচের দিকের ৩টি কাজ কেটে দিন। নিজেকে অনুমতি দিন \"কিছু না করার\"। সপ্তাহে অন্তত একটি সন্ধ্যা রাখুন যেখানে কোনো কাজ বা প্ল্যান থাকবে না।",
     "criticalReflection": "\"Doing less\" is often a privilege of those with economic security. For someone working three jobs to survive, this advice is tone-deaf. However, applied to mental clutter and unnecessary social obligations, it remains universally valid.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Lower stress and higher quality of work.",
+      "social": "A slower, more thoughtful pace of life."
     }
   },
   {
@@ -2220,8 +2220,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার এমন একটি প্রজেক্ট বা বই খুঁজে বের করুন যা আপনি অর্ধেক করে রেখে দিয়েছেন। আজ প্রতিজ্ঞা করুন, আগামী ৭ দিনের মধ্যে এটি শেষ করবেন। ছোট হলেও কোনো কাজ \"সম্পূর্ণ\" করার স্বাদ নিন।",
     "criticalReflection": "Persistence is a virtue, but the \"sunk cost fallacy\" is a risk. Sometimes quitting is the smart decision if the goal no longer aligns with one's values or reality. Blindly finishing everything can lead to wasted time on unworthy pursuits.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A track record of achievement and high self-efficacy.",
+      "social": "Increased trust and dependability in professional networks."
     }
   },
   {
@@ -2253,8 +2253,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ রাতে ঘুমানোর আগে নিজেকে রেটিং দিন (১-১০)। প্রশ্ন করুন: \"আজ আমি আমার ভবিষ্যতের জন্য কতটুকু কাজ করেছি?\" যদি স্কোর কম হয়, তবে আগামীকাল ১ ঘণ্টা বেশি ফোকাসড কাজ করার প্ল্যান করুন।",
     "criticalReflection": "Linking daily exhaustion to \"correctness\" glorifies toil. One can be exhausted from busywork without making real progress. Strategic action, not just hard action, shapes the future.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "A sense of agency and reduced anxiety about the unknown.",
+      "social": "A proactive and forward-thinking citizenry."
     }
   },
   {
@@ -2334,8 +2334,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আগামী ২৪ ঘণ্টা আপনার কোনো মতামত (Opinion) বা উপদেশ কাউকে দেবেন না, যদি না কেউ চায়। কেউ ভুল কিছু বললে কেবল হাসুন এবং চুপ থাকুন। দেখুন এতে আপনার মানসিক শক্তি কতটা বাঁচে।",
     "criticalReflection": "\"Letting others be\" is peaceful but can be complicit. If \"others\" are causing harm or spreading hate, silence is not a virtue but cowardice. Stoic withdrawal must be balanced with civic responsibility.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Immense mental peace and conservation of energy.",
+      "social": "Less polarization and conflict in daily interactions."
     }
   },
   {
@@ -2367,8 +2367,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখন কেউ আপনার সাথে খারাপ ব্যবহার করবে, তখন তাকে \"শিক্ষক\" হিসেবে দেখুন। মনে মনে বলুন, \"ধন্যবাদ আমাকে দেখানোর জন্য যে, মেজাজ হারালে মানুষকে কতটা কুৎসিত দেখায়। আমি এমন হব না।\"",
     "criticalReflection": "Using others' bad behavior solely for self-reflection is productive but can lead to passivity. Sometimes bad behavior needs to be confronted and corrected, not just introspected upon, especially if it violates boundaries or safety.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Superior emotional regulation and humility.",
+      "social": "De-escalation of conflicts and more empathetic communities."
     }
   },
   {
@@ -2400,8 +2400,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার ফ্রেন্ডলিস্ট চেক করুন। কারা আপনাকে নিয়মিত খোঁজ নেয় বা বিপদে পাশে ছিল? তাদের একটি আলাদা তালিকা করুন। আজ তাদের অন্তত একজনকে ফোন করে বলুন তারা আপনার জন্য কতটা স্পেশাল। বাকিদের নিয়ে প্রত্যাশা কমান।",
     "criticalReflection": "The definition of friendship here is very high-stakes. Casual friendships (acquaintances) also have value for social networking and lightheartedness. Viewing relationships purely through a lens of utility or deep value might isolate one from the simple joys of casual socializing.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Deep, supportive relationships and less loneliness.",
+      "social": "Stronger social safety nets within small groups."
     }
   },
   {
@@ -2433,8 +2433,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ সারাদিন \"স্লো মোশন\"-এ চলুন। কথা বলার সময় তাড়াহুড়ো করবেন না। কারো কথার মাঝখানে কথা বলবেন না। ভাবুন আপনি একটি রাজকীয় ডিনারে আছেন যেখানে ভদ্রতাই একমাত্র মুদ্রা।",
     "criticalReflection": "\"Waiting your turn\" is a noble aristocratic ideal but in a hyper-competitive world, passivity often leads to missed opportunities. Assertiveness is sometimes needed over gentleness to secure one's rights or fair share.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Developing a charismatic and calming presence.",
+      "social": "A more polite and considerate public sphere."
     }
   },
   {
@@ -2467,8 +2467,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই কারো ইনস্টাগ্রাম স্টোরি দেখে হিংসা হবে, নিজেকে বলুন: \"আমি তার ব্যাকস্টেজ জানি না, শুধু হাইলাইট দেখছি।\" এরপর ফোন রেখে নিজের জীবনের ৩টি ভালো দিক লিখে ফেলুন (যেমন: সুস্থ শরীর, মা-বাবার হাসি, বা প্রিয় বই)।",
     "criticalReflection": "While \"eradicating envy\" is noble, it's easier said than done in a hyper-capitalist society designed to trigger envy for consumption. Instead of trying to \"eradicate\" it completely (which feels impossible), transforming envy into inspiration might be a more practical initial step for most people.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Deep contentment with one's own pace of life.",
+      "social": "Authentic support for peers instead of secret rivalry."
     }
   },
   {
@@ -2500,8 +2500,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "এমন একটি পোশাক পরুন বা এমন একটি কাজ করুন যা আপনি \"লোকে কী বলবে\" ভয়ে করছেন না। ছোট একটি ঝুঁকি নিন। কেউ কিছু বললে হাসিমুখে শুনুন এবং নিজের কাজ চালিয়ে যান। এটি আপনার \"Thick Skin\" তৈরি করবে।",
     "criticalReflection": "\"Not caring\" can slip into narcissism or lack of empathy if taken to the extreme. We exist in a community, and sometimes feedback is valid (e.g., if one's actions hurt others). The goal is to filter noise, not valid moral criticism.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Unapologetic authenticity and creative freedom.",
+      "social": "A more diverse society with varied life paths."
     }
   },
   {
@@ -2533,8 +2533,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আজ কোনো বিশেষ কারণ ছাড়াই আপনার ৩ জন প্রিয় বন্ধু বা আত্মীয়কে মেসেজ দিন। লিখুন: \"তোমাকে আমার জীবনে পেয়ে আমি খুশি।\" কোনো ফরোয়ার্ডেড মেসেজ নয়, নিজের ভাষায় লিখুন।",
     "criticalReflection": "The book shifts here from self-reliance to interdependence. It acknowledges that Stoicism isn't about isolation. However, finding \"worthy\" people to share joy with is challenging in adulthood. The advice assumes one already has a healthy social circle, which isn't true for everyone.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Reduced loneliness and deeper emotional bonds.",
+      "social": "Strengthened community ties and social capital."
     }
   },
   {
@@ -2613,8 +2613,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "একটি \"Crisis Plan\" তৈরি করুন। যদি কাল বড় কোনো প্রাকৃতিক দুর্যোগ বা আর্থিক ধস নামে, আপনার প্রথম ৩টি পদক্ষেপ কী হবে? এটি লিখে রাখলে উদ্বেগ কমে এবং আত্মবিশ্বাস বাড়ে।",
     "criticalReflection": "\"Always on the lookout\" can lead to hyper-vigilance or paranoia. While preparation is key, living in constant anticipation of disaster ruins the present. The balance between preparedness and paranoia is delicate.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Calmness during chaos; better emergency planning.",
+      "social": "Reduced panic buying and collective hysteria."
     }
   },
   {
@@ -2646,8 +2646,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "\"Memento Mori\" (মৃত্যুকে স্মরণ কর) অনুশীলন করুন। ভাবুন, যদি আজকেই আপনার প্রিয়জনের সাথে শেষ দেখা হয়, তবে আপনি তার সাথে কেমন আচরণ করবেন? আজ বাড়ি ফিরে বা ফোনে ঠিক সেই আচরণটি করুন।",
     "criticalReflection": "Counting \"how many times left\" with parents is a terrifying but effective reality check. It forces prioritization. However, it can also induce anticipatory grief, making interactions heavy instead of joyful.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Enhanced presence in relationships; reduced petty conflicts.",
+      "social": "Stronger intergenerational bonds."
     }
   },
   {
@@ -2679,8 +2679,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার জীবনের বর্তমান অবস্থাকে একটি ঋতুর সাথে তুলনা করুন। যদি এখন \"শীতকাল\" (খারাপ সময়) চলে, তবে মনে রাখুন বসন্ত আসবেই। এই সময়ে কেবল টিকে থাকার (Survival) দিকে মনোযোগ দিন, বড় কিছু করার দরকার নেই।",
     "criticalReflection": "Accepting cycles helps reduce despair during lows but also curbs arrogance during highs. It keeps the ego in check. Sociologically, acknowledging cycles helps societies prepare for economic recessions or pandemics without losing hope.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Emotional stability during crises.",
+      "social": "A culture of patience and long-term thinking."
     }
   },
   {
@@ -2712,8 +2712,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যদি নিজেকে \"আটকে থাকা\" (Stuck) মনে হয়, তবে আজই এমন একটি কাজ করুন যা অন্যের উপকারে আসে। হতে পারে ঘরের কাজ করে দেওয়া বা কলিগকে সাহায্য করা। নিজের ফোকাস \"আমি\" থেকে সরিয়ে \"আমরা\"-তে নিন।",
     "criticalReflection": "\"Focusing on others\" is a clinically proven antidepressant method (altruism). It shifts the ruminating brain from internal misery to external utility. It’s a simple but profound bio-hack for mental health.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Quick recovery from depressive episodes or creative blocks.",
+      "social": "Increased volunteerism and community support."
     }
   },
   {
@@ -2746,8 +2746,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "\"Seinfeld Strategy\" বা ক্যালেন্ডার চেইন মেথড ব্যবহার করুন। কোনো একটি অভ্যাসের জন্য ক্যালেন্ডারে রোজ দাগ দিন। চেইন ভাঙবেন না। ছোট ছোট জয়ে নিজেকে অভ্যস্ত করুন।",
     "criticalReflection": "\"Never miss\" creates high discipline but risks obsessive-compulsive behavior or burnout. Life happens (sickness, emergencies). A more compassionate rule is \"Never miss twice\" (James Clear), allowing for human error without losing momentum.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Elite level discipline and grit.",
+      "social": "High-achieving individuals who push boundaries."
     }
   },
   {
@@ -2779,8 +2779,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আগামী ৩ দিন কোনো নিউজ চ্যানেল বা নিউজ পোর্টাল দেখবেন না। সেই সময়টুকু নিজের স্কিল ডেভেলপমেন্টে ব্যয় করুন। দেখুন উদ্বেগ কমে কি না এবং প্রোডাক্টিভিটি বাড়ে কি না।",
     "criticalReflection": "Ignoring news can lead to being uninformed voters. Personal power is vital, but collective power (voting, activism) shapes the external conditions. One should be informed enough to act as a citizen, but not enough to be paralyzed as an individual.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Proactive mindset and reduced anxiety.",
+      "social": "A society focused on solutions rather than complaints."
     }
   },
   {
@@ -2812,8 +2812,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "যখনই নিজের ওপর রাগ হবে, চোখ বন্ধ করে ভাবুন আপনার সবচেয়ে প্রিয় বন্ধু এই ভুলটি করেছে। আপনি তাকে কী বলতেন? ঠিক সেই কথাগুলোই নিজেকে বলুন।",
     "criticalReflection": "Self-friendship is the antidote to self-loathing. It is foundational for mental health. Without it, external validation becomes a drug. This is arguably the most important lesson for long-term happiness.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "High emotional intelligence and self-love.",
+      "social": "More compassionate and less judgmental interactions."
     }
   },
   {
@@ -2845,8 +2845,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আপনার বিনিয়োগ বা সঞ্চয়ের দিকে তাকান। প্যানিক হয়ে সব বিক্রি বা খরচ না করে দীর্ঘমেয়াদী প্ল্যানে অটল থাকুন। মন্দাকে \"Sale\" বা সুযোগ হিসেবে দেখার চেষ্টা করুন।",
     "criticalReflection": "Staying calm in a recession is easier for those with savings. For those losing jobs/homes, \"staying calm\" sounds patronizing. However, panic only worsens poverty. Rational action (cutting costs, upskilling) is the only way out, regardless of class.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Financial resilience and wealth accumulation over time.",
+      "social": "Reduced market volatility driven by fear."
     }
   },
   {
@@ -2878,8 +2878,8 @@ export const chapters: Chapter[] = [
     "practicalApplication": "আয়নায় নিজের বয়সের ছাপ বা শরীরের কোনো দাগ দেখে মন খারাপ করবেন না। ভাবুন, \"এটি আমার বেঁচে থাকার প্রমাণ।\" শরীর খারাপ হলে জোর না করে বিশ্রাম নিন। নশ্বরতাকে ভয় না পেয়ে আজকেই সেরা ব্যবহার করুন।",
     "criticalReflection": "The book ends on a somber but liberating note. Accepting physical decay is the ultimate test of a Stoic. It challenges the modern obsession with eternal youth and bio-hacking, proposing that dignity lies in acceptance, not denial.",
     "expectedOutcomes": {
-      "individual": "",
-      "social": ""
+      "individual": "Graceful aging and reduced health anxiety.",
+      "social": "A society that respects elders and the natural cycle of life."
     }
   }
 ];
