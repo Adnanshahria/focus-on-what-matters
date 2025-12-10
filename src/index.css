@@ -329,8 +329,10 @@ a:hover {
   box-shadow: var(--shadow-glow);
 }
 
+/* Don't hide the icon, just let the input cover it to preserve layout stability */
 .search-container.expanded .search-icon-btn {
-  display: none;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .search-input-wrapper {
@@ -340,6 +342,8 @@ a:hover {
   right: 0;
   transform: translateY(-50%);
   width: 280px;
+  max-width: calc(100vw - 2rem);
+  /* Ensure it fits on mobile */
   background: var(--bg-secondary);
   border: 1px solid var(--accent-primary);
   border-radius: var(--radius-full);
@@ -347,7 +351,8 @@ a:hover {
   align-items: center;
   gap: var(--space-2);
   box-shadow: var(--shadow-glow);
-  z-index: var(--z-dropdown);
+  z-index: var(--z-modal);
+  /* Ensure it's on top */
   animation: slideIn 0.2s ease;
 }
 
