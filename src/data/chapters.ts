@@ -87,10 +87,10 @@ export const chapters: Chapter[] = [
       }
     ],
     "practicalApplication": "যখনই খুব রাগ বা ভয় অনুভব করবেন, তাৎক্ষণিকভাবে কোনো প্রতিক্রিয়া দেখাবেন না। \"পজ বাটন\" চাপুন। নিজেকে প্রশ্ন করুন: \"আমি কি এখন আবেগের সুতোয় বাঁধা পুতুলের মতো আচরণ করছি?\" গভীরভাবে শ্বাস নিন এবং ভাবুন আপনার \"উচ্চতর সত্তা\" (Higher Self) এই পরিস্থিতিতে কী করত। তারপর ধীরস্থিরে কাজ করুন।",
-    "criticalReflection": "Framing emotions as something that pulls us \"like a mere puppet\" creates a dichotomy between reason (good) and emotion (bad). Modern psychology suggests that emotions are vital signals, not just obstacles to be conquered. Suppressing emotions to achieve a \"divine\" state can lead to emotional blunting or alexithymia. Socially, this stoic suppression is often linked to toxic masculinity, where expressing vulnerability is seen as weakness.",
+    "criticalReflection": "আবেগকে \"পুতুল নাচের সুতো\" হিসেবে দেখা যুক্তি (ভালো) এবং আবেগের (খারাপ) মধ্যে একটি বিভাজন তৈরি করে। আধুনিক মনোবিজ্ঞান বলে, আবেগ কেবল জয়ের বাধাই নয়, বরং গুরুত্বপূর্ণ সংকেত। \"ঐশ্বরিক\" স্তরে পৌঁছানোর জন্য আবেগকে দমন করা মানসিক অসাড়তা বা অ্যালেক্সিথাইমিয়া (আবেগ বুঝতে না পারা) তৈরি করতে পারে। সামাজিকভাবে, এই স্টয়িক অবদমন প্রায়ই \"টক্সিক ম্যাসকুলিনিটি\"-র সাথে যুক্ত, যেখানে দুর্বলতা প্রকাশকে দুর্বলতা হিসেবে দেখা হয়।",
     "expectedOutcomes": {
-      "individual": "Development of a \"pause mechanism\" between stimulus and response, leading to wiser decisions.",
-      "social": "Individuals become less volatile and more predictable, fostering stability in groups, though they may appear emotionally distant to loved ones seeking empathy."
+      "individual": "উদ্দীপনা এবং প্রতিক্রিয়ার মাঝখানে একটি \"বিরতি বা পজ\" তৈরি করা, যা আরও বুদ্ধিদীপ্ত সিদ্ধান্তে সহায়ক।",
+      "social": "ব্যক্তিরা কম অস্থির এবং আরও নির্ভরযোগ্য হয়ে ওঠে, যা দলের স্থিতিশীলতা বাড়ায়। তবে সহমর্মিতা প্রত্যাশী প্রিয়জনদের কাছে তাদের আবেগহীন মনে হতে পারে।"
     }
   },
   {

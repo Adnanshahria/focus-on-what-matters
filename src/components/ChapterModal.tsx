@@ -66,7 +66,7 @@ export function ChapterModal({ chapter, onClose }: ChapterModalProps) {
                             className={`tab-btn ${activeTab === 'reflection' ? 'active' : ''}`}
                             onClick={() => setActiveTab('reflection')}
                         >
-                            Critical View
+                            পর্যালোচনা
                         </button>
                         <button
                             className={`tab-btn ${activeTab === 'quotes' ? 'active' : ''}`}
@@ -103,27 +103,27 @@ export function ChapterModal({ chapter, onClose }: ChapterModalProps) {
                             <div className="practice-section bengali-text">
                                 <div className="practice-header">
                                     <span className="practice-icon">🎯</span>
-                                    <h3>Practice It</h3>
+                                    <h3>অনুশীলন</h3>
                                 </div>
                                 <p className="practice-content">{chapter.practicalApplication}</p>
                             </div>
                         )}
 
                         {activeTab === 'reflection' && (
-                            <div className="reflection-section">
+                            <div className="reflection-section bengali-text">
                                 <div className="critical-reflection">
-                                    <h4>Critical Reflection</h4>
+                                    <h4>সমালোচনামূলক বিশ্লেষণ</h4>
                                     <p>{chapter.criticalReflection}</p>
                                 </div>
                                 <div className="outcomes-grid">
                                     <div className="outcome-card individual">
                                         <span className="outcome-icon">👤</span>
-                                        <h5>Individual</h5>
+                                        <h5>ব্যক্তিগত</h5>
                                         <p>{chapter.expectedOutcomes.individual}</p>
                                     </div>
                                     <div className="outcome-card social">
                                         <span className="outcome-icon">👥</span>
-                                        <h5>Social</h5>
+                                        <h5>সামাজিক</h5>
                                         <p>{chapter.expectedOutcomes.social}</p>
                                     </div>
                                 </div>
