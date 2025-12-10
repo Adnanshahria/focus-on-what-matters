@@ -272,13 +272,15 @@
 .chapter-card.expanded {
   grid-column: 1 / -1;
   cursor: default;
-  border-color: var(--accent-secondary);
-  box-shadow: var(--shadow-gold-glow);
+  border-color: rgba(16, 185, 129, 0.4);
+  /* Subtle Emerald */
+  box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+  /* Soft Emerald Glow */
 }
 
 .chapter-card.expanded::before {
   opacity: 1;
-  background: linear-gradient(90deg, var(--accent-secondary), var(--accent-primary));
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-primary-dark));
 }
 
 .chapter-header {

@@ -50,8 +50,8 @@
   --accent-tertiary-dark: #4f46e5;
 
   /* Quote & Highlight Colors */
-  --quote-bg: rgba(245, 158, 11, 0.08);
-  --quote-border: #f59e0b;
+  --quote-bg: rgba(16, 185, 129, 0.05);
+  --quote-border: var(--accent-primary);
   --highlight: rgba(16, 185, 129, 0.15);
 
   /* Borders & Dividers */
