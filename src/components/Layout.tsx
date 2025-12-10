@@ -14,7 +14,7 @@ export function Layout({ children, onSearch }: LayoutProps) {
                 <div className="header-content">
                     <div className="logo-section">
                         <div className="logo-icon">
-                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
                                 <circle cx="16" cy="16" r="14" stroke="currentColor" strokeWidth="2" />
                                 <path
                                     d="M16 8v8l6 3"
@@ -25,16 +25,14 @@ export function Layout({ children, onSearch }: LayoutProps) {
                             </svg>
                         </div>
                         <div className="logo-text">
-                            <h1>Focus on What Matters</h1>
-                            <span className="logo-subtitle">A Modern Stoic Reader</span>
+                            <h1>Stoic Guide</h1>
                         </div>
                     </div>
 
-                    <div className="header-search">
-                        <Search onResultSelect={onSearch} />
-                    </div>
+                    <Search onResultSelect={onSearch} />
                 </div>
             </header>
+
 
             {/* Main Content */}
             <main className="app-main">

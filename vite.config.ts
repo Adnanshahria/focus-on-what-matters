@@ -15,8 +15,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'icon-192.png', 'icon-512.png'],
       manifest: {
-        name: 'Focus on What Matters',
-        short_name: 'Stoic Reader',
+        name: 'Ultimate Stoic Guide',
+        short_name: 'Ultimate Stoic Guide',
         description: 'A Modern Stoic Reader - 83 chapters of Stoic wisdom with Golden Quotes and Bengali summaries',
         // Dark navy color matching the app theme
         theme_color: '#0a0f1a',
