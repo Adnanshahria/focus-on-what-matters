@@ -823,6 +823,36 @@
   gap: var(--space-4);
 }
 
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--bg-tertiary);
+  /* Gray background */
+  border-radius: var(--radius-sm);
+  /* Boxy shape */
+  border: 1px solid var(--border-subtle);
+  border-left-width: 4px;
+  /* Visible colored border */
+  min-width: 140px;
+  /* Ensure minimum width */
+}
+
+.stat-emerald {
+  border-left-color: var(--accent-primary);
+}
+
+.stat-gold {
+  border-left-color: var(--accent-secondary);
+}
+
+.stat-indigo {
+  border-left-color: var(--accent-tertiary);
+}
+
 .stats-card {
   display: flex;
   flex-direction: column;

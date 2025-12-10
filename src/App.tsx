@@ -48,15 +48,15 @@ function App() {
             A comprehensive guide to Stoic philosophy with <span className="highlight">Golden Quotes</span> and <span className="bengali-text">বাংলায় সারসংক্ষেপ</span>
           </p>
           <div className="hero-stats">
-            <div className="stat">
+            <div className="stat stat-emerald">
               <span className="stat-value">{chapters.length}</span>
               <span className="stat-label">Chapters</span>
             </div>
-            <div className="stat">
+            <div className="stat stat-indigo">
               <span className="stat-value">{sections.length}</span>
               <span className="stat-label">Sections</span>
             </div>
-            <div className="stat">
+            <div className="stat stat-gold">
               <span className="stat-value">∞</span>
               <span className="stat-label">Insights</span>
             </div>
