@@ -519,7 +519,7 @@
 }
 
 .critical-reflection {
-  background: rgba(16, 185, 129, 0.1);
+  background: var(--bg-tertiary);
   border-left: 3px solid var(--accent-primary);
   padding: var(--space-4);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
