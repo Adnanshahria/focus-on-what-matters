@@ -66,7 +66,7 @@ export const chapters: Chapter[] = [
     "sectionTitle": "The Inner World",
     "chapterTitle": "Harnessing the Divine Power Within",
     "goldenQuotes": [
-      "Understand at last that you have something in you more powerful and divine than what causes the bodily passions and pulls you like a mere puppet."
+      "Understand at last that you have something in you more powerful and divine than what causes the bodily passions and pulls you like a mere puppet. — Marcus Aurelius"
     ],
     "coreInsights": [
       {

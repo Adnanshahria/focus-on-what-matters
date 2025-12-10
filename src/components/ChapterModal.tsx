@@ -91,11 +91,18 @@ export function ChapterModal({ chapter, onClose }: ChapterModalProps) {
 
                         {activeTab === 'quotes' && (
                             <div className="golden-quotes-section">
-                                {chapter.goldenQuotes.map((quote, idx) => (
-                                    <blockquote key={idx} className="quote">
-                                        <p className="quote-text">{quote}</p>
-                                    </blockquote>
-                                ))}
+                                {chapter.goldenQuotes.map((quoteStr, idx) => {
+                                    const [text, author] = quoteStr.includes('—')
+                                        ? quoteStr.split('—').map(s => s.trim())
+                                        : [quoteStr, null];
+
+                                    return (
+                                        <blockquote key={idx} className="quote">
+                                            <p className="quote-text">{text}</p>
+                                            {author && <footer className="quote-author">— {author}</footer>}
+                                        </blockquote>
+                                    );
+                                })}
                             </div>
                         )}
 
