@@ -784,10 +784,132 @@
     flex-wrap: nowrap;
     margin-right: calc(var(--space-4) * -1);
     padding-right: var(--space-4);
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .content-tabs::-webkit-scrollbar {
+    display: none;
   }
 
   .tab-btn {
     white-space: nowrap;
+    min-height: 44px;
+    /* Apple recommended touch target */
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.8rem;
+  }
+
+  /* Modal adjustments for mobile */
+  .chapter-modal {
+    height: 95vh;
+    max-height: none;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    margin-top: auto;
+  }
+
+  .chapter-modal-overlay {
+    align-items: flex-end;
+    padding: 0;
+  }
+
+  .modal-header {
+    padding: var(--space-4);
+  }
+
+  .modal-content {
+    padding: var(--space-4);
+  }
+
+  /* Quote adjustments for mobile readability */
+  .quote {
+    padding: var(--space-4);
+  }
+
+  .quote-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .quote-author {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+
+  /* Reflection section mobile */
+  .critical-reflection {
+    padding: var(--space-3);
+  }
+
+  .critical-reflection h4 {
+    font-size: 1rem;
+  }
+
+  .critical-reflection p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+
+  .outcomes-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .outcome-card {
+    padding: var(--space-3);
+  }
+
+  /* Insight card mobile */
+  .insight-card {
+    padding: var(--space-3);
+  }
+
+  .insight-title {
+    font-size: 0.95rem;
+  }
+
+  .insight-content {
+    font-size: 0.85rem;
+    line-height: 1.7;
+  }
+
+  /* Practice section mobile */
+  .practice-section {
+    padding: var(--space-4);
+  }
+
+  .practice-content {
+    font-size: 0.9rem;
+  }
+
+  /* Chapter card mobile touch area */
+  .chapter-card {
+    padding: var(--space-4);
+    min-height: 88px;
+  }
+
+  /* Close button larger touch target */
+  .close-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  /* Section navigation mobile */
+  .section-nav {
+    overflow-x: auto;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: var(--space-2);
+  }
+
+  .section-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section-pill {
+    flex-shrink: 0;
+    min-height: 44px;
   }
 }
 
