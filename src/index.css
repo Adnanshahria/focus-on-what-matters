@@ -427,10 +427,12 @@ a:hover {
   z-index: var(--z-tooltip);
   max-height: 400px;
   overflow-y: auto;
+  overflow-x: hidden;
   border: 1px solid var(--border-default);
   border-radius: var(--radius-lg);
   background: var(--bg-primary);
   box-shadow: var(--shadow-lg);
+  box-sizing: border-box;
 }
 
 /* Search Results Highlight */

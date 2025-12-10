@@ -8,7 +8,7 @@ interface ChapterCardProps {
 }
 
 export function ChapterCard({ chapter, isExpanded = false, onToggle }: ChapterCardProps) {
-    const [activeTab, setActiveTab] = useState<'insights' | 'practice' | 'reflection'>('insights');
+    const [activeTab, setActiveTab] = useState<'insights' | 'quotes' | 'practice' | 'reflection'>('insights');
 
     return (
         <article
@@ -39,15 +39,6 @@ export function ChapterCard({ chapter, isExpanded = false, onToggle }: ChapterCa
                 )}
             </header>
 
-            {/* Golden Quotes - Always visible */}
-            <div className="golden-quotes-section">
-                {chapter.goldenQuotes.slice(0, isExpanded ? undefined : 1).map((quote, idx) => (
-                    <blockquote key={idx} className="quote">
-                        <p className="quote-text">{quote}</p>
-                    </blockquote>
-                ))}
-            </div>
-
             {/* Expanded Content */}
             {isExpanded && (
                 <div className="chapter-content">
@@ -71,6 +62,12 @@ export function ChapterCard({ chapter, isExpanded = false, onToggle }: ChapterCa
                         >
                             Critical View
                         </button>
+                        <button
+                            className={`tab-btn ${activeTab === 'quotes' ? 'active' : ''}`}
+                            onClick={() => setActiveTab('quotes')}
+                        >
+                            Golden Quotes
+                        </button>
                     </nav>
 
                     {/* Tab Content */}
@@ -82,6 +79,16 @@ export function ChapterCard({ chapter, isExpanded = false, onToggle }: ChapterCa
                                         <h4 className="insight-title">{insight.title}</h4>
                                         <p className="insight-content">{insight.content}</p>
                                     </div>
+                                ))}
+                            </div>
+                        )}
+
+                        {activeTab === 'quotes' && (
+                            <div className="golden-quotes-section">
+                                {chapter.goldenQuotes.map((quote, idx) => (
+                                    <blockquote key={idx} className="quote">
+                                        <p className="quote-text">{quote}</p>
+                                    </blockquote>
                                 ))}
                             </div>
                         )}
